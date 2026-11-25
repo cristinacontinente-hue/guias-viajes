@@ -2,8 +2,8 @@
 layout: viaje
 title: "Gran Canaria en coche: barrancos, cumbres y atardeceres"
 destino: "Gran Canaria, España"
-fechas: "Octubre 2022"
-fecha_viaje: 2022-10-19
+fechas: "20-24 octubre 2022"
+fecha_viaje: 2022-10-20
 duracion: "5 días"
 viajeros: "Pareja"
 presupuesto: "Bajo-medio"
@@ -169,9 +169,9 @@ Estos dos restaurantes, el Asadero La Caldera y el Bar Restaurante Guayadeque, s
 
 ## Dónde dormir
 
-- **Las Palmas de Gran Canaria**: nos alojamos aquí. Está a 20 minutos del aeropuerto y es buena base para recorrer toda la isla en coche. Desde aquí se llega fácil al casco antiguo de Vegueta, a la catedral y al mercado.
+- **Las Palmas de Gran Canaria**: buena base para recorrer toda la isla en coche, a unos 20 minutos del aeropuerto.
 
-<!-- Pendiente: nombre del alojamiento, si quiere añadirlo -->
+Nosotros nos alojamos en **Aminta Home**, un *bed & breakfast* en una casa canaria tradicional. Está en la zona de Tafira (Calle Hernán Pérez de Grado, 30), a unos 3,5 km del centro de Las Palmas y muy cerca del Jardín Botánico. Tiene salón y comedor compartidos y un patio. Precio orientativo: *(por confirmar)*{: .por-confirmar}.
 
 ## Consejos prácticos
 
@@ -207,3 +207,4 @@ Nos quedaron pendientes, y son obligados la próxima vez:
 - [Asadero La Caldera (Gastroranking)](https://gastroranking.es/r/asadero-la-caldera_73527/)
 - [Jardín Botánico Viera y Clavijo](https://www.grancanaria.com/turismo/en/nature/swimming-in-a-sea-of-strange-plants/)
 - [Cicar: alquiler de coches](https://www.cicar.com/)
+- [Aminta Home (Kayak)](https://www.kayak.es/Las-Palmas-de-Gran-Canaria-Hoteles-Aminta-Home.2783167.ksp)
