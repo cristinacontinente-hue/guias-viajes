@@ -221,7 +221,7 @@ Los que probamos y los que más os recomendamos:
 | **Restaurante El Moral** (Villaverde) | Cocina canaria (sus reseñas destacan el carpaccio de cabra y los postres) | Cierra domingos y lunes |
 | **La Paneteca** (Lajares) | Desayuno o *brunch*: pan, bollería y café | Suele haber cola |
 | **Olivo Corso** y **El Roque de los Pescadores** (El Cotillo) | Cocina de fusión / pescado fresco con vistas al mar | Se llenan pronto |
-| **Casa de comidas Valtarajal** (Betancuria) | Comida casera canaria: carne de cabra, ropa vieja, quesos | Cerrado lunes y martes en 2023; días de apertura *(por confirmar)*{: .por-confirmar} |
+| **Casa de comidas Valtarajal** (Betancuria) | Comida casera canaria: carne de cabra, ropa vieja, quesos | Mejor llamar antes para confirmar el horario |
 | **El Luchador, Casa Tino Matoso** (Valles de Ortega, Antigua) | Carne de cabra y cabrito, postres caseros | Cerrado lunes y martes en 2023. Al lado hay unos molinos |
 | **Mis Abuelos Tapas** (Morro Jable) | Tapas y cocina canaria casera | Se llena: mejor llamar |
 | **Bollywood Spices** (Caleta de Fuste) | Comida india | Al lado del alojamiento |
