@@ -142,7 +142,7 @@ Después hicimos una ruta en coche por el centro de la isla:
 - **Aguas Verdes**
 - **Mirador de Guise y Ayose**
 - **Antigua** y su **iglesia de Nuestra Señora de Antigua**
-- **Molinos del Durazno**: mi molino favorito, una estampa preciosa
+- **Molino de El Durazno**, en Antigua ([ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Molino+de+El+Durazno+Antigua+Fuerteventura)): mi molino favorito, una estampa preciosa
 - **Betancuria**: un pueblo pequeño que se visita rápido, pero muy recomendable. Entrad en la **iglesia de Santa María**.
 
 🌙 **Atardecer:** **Mirador de las Peñitas** y **Barranco de las Peñitas** ([ruta en Wikiloc](https://es.wikiloc.com/rutas-a-pie/fuerteventura-barranco-de-las-penitas-12132591)). Subimos a buscar el **Arco de las Peñitas**, pero no lo encontramos: nos pilló atardeciendo y se nos echaba la noche encima.
@@ -153,7 +153,7 @@ Después hicimos una ruta en coche por el centro de la isla:
 Cerca de allí están las **Cuevas de Ajuy**, con un sendero corto hasta las cuevas, y los **charcones de Ajuy**. A nosotros ya no nos dio tiempo porque llegamos tarde, pero merece la pena ([más información](https://www.fuerteventura.es/ajuy)).
 
 <!-- FOTO: Isla de Lobos / Puertito de Lobos -->
-<!-- FOTO: Molinos del Durazno -->
+<!-- FOTO: Molino de El Durazno (Antigua) -->
 <!-- FOTO: Betancuria -->
 
 ### Día 4 (martes): ¡Día de playa en el sur!
