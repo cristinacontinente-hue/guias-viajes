@@ -143,23 +143,21 @@ Nosotros la hicimos en menos de 3 horas, con la subida a la caldera incluida. No
 > **Para visitar la Isla de Lobos hace falta un permiso del Cabildo de Fuerteventura.** Es gratuito, personal y se pide por internet unos días antes. Las plazas son limitadas, así que pedidlo con tiempo. El billete del ferry se paga aparte. Desconfiad de cualquier web que os cobre por el permiso. Precio actual del ferry y plazo para pedir el permiso: *(por confirmar)*{: .por-confirmar}.
 {: .ojo}
 
-☀️ **Tarde:** volvimos en el ferry de las 14:00 y pusimos rumbo a **Tindaya**. Comimos en **Los Podomorfos de Tindaya**: un sitio con mucho encanto, vistas preciosas a la montaña y una hamburguesa de cabra exquisita.
+☀️ **Tarde:** volvimos en el ferry de las 14:00 y pusimos rumbo a **Tindaya**, pasando por los **Molinos de Villaverde**. Comimos en **Los Podomorfos de Tindaya**: un sitio con mucho encanto, vistas preciosas a la montaña y una hamburguesa de cabra exquisita.
 
 ![Hamburguesa de cabra con patatas en Los Podomorfos, con la Montaña de Tindaya al otro lado de la ventana](imagenes/hamburguesa-cabra-podomorfos-tindaya.jpg)
 
 ![Sentada sobre las grandes letras de Tindaya, con la montaña al fondo](imagenes/letras-tindaya-montana.jpg)
 
-Después hicimos una ruta en coche por el centro de la isla:
-- **Molinos de Villaverde**
-- **Montaña de Tindaya**
-- **Mirador de Vallebrón**
+Después hicimos una ruta en coche por el centro de la isla, con paradas cortas de camino hacia el atardecer:
 - **Molinos de Tefía**
-- **Llanos de la Concepción**
-- **Aguas Verdes**
-- **Mirador de Guise y Ayose**
+- **Mirador de Guise y Ayose**, con sus dos estatuas gigantes
 - **Antigua** y su **iglesia de Nuestra Señora de Antigua**
 - **Molino de El Durazno**, en Antigua ([ver en Google Maps](https://www.google.com/maps/search/?api=1&query=Molino+de+El+Durazno+Antigua+Fuerteventura)): mi molino favorito, una estampa preciosa
 - **Betancuria**: un pueblo pequeño que se visita rápido, pero muy recomendable. Entrad en la **iglesia de Santa María**.
+
+> Es una tarde intensa: entre la vuelta del ferry, la comida y el atardecer quedan unas 3 horas. Si tenéis más tiempo, de camino también están el **Mirador de Vallebrón** y las piscinas naturales de **Aguas Verdes**, en la costa oeste (requieren desviarse y caminar un poco).
+{: .truco}
 
 🌙 **Atardecer:** **Mirador de las Peñitas** y **Barranco de las Peñitas** ([ruta en Wikiloc](https://es.wikiloc.com/rutas-a-pie/fuerteventura-barranco-de-las-penitas-12132591)). Subimos a buscar el **Arco de las Peñitas**, pero no lo encontramos: nos pilló atardeciendo y se nos echaba la noche encima.
 
