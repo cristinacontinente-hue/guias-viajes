@@ -130,7 +130,7 @@ De camino a Artenara, nos paramos en un mirador donde vimos muchos coches y moto
 - **Museo Etnográfico Casas Cuevas**: gratuito, con donativo voluntario. Muy recomendable: cuenta cómo se vivía, y se sigue viviendo, en las casas cueva.
 - Paseo por la **iglesia de San Matías** y subida a la **ermita de la Cuevita**.
 
-☀️ **Tarde:** comida en **Tejeda** nada más llegar y paseo por su centro histórico, muy bonito. Café y un dulce de almendra para compartir. En Tejeda son típicos los **dulces de almendra** y los **helados**. No os vayáis sin haceros una foto en la **Cesta gigante de Tejeda**, con el Roque Bentayga al fondo.
+☀️ **Tarde:** opción de comer en **Tejeda**, pasear por su centro histórico, que es muy bonito, y tomar por la tarde un café y un dulce de almendra. En Tejeda son típicos los **dulces de almendra** y los **helados artesanales**. Sitios a destacar: **Dulcería Nublo** y **Casa de la Almendra**. No os vayáis sin haceros una foto en la **Cesta gigante de Tejeda**, con el Roque Bentayga al fondo.
 
 ![Sentada dentro de la Cesta gigante de Tejeda, con el Roque Bentayga al fondo](imagenes/cesta-gigante-tejeda-bentayga.jpg)
 
@@ -192,7 +192,7 @@ Seguimos hacia **Teror**: paseo por sus calles, la **Basílica de Nuestra Señor
 |---|---|---|
 | **Bar Restaurante Guayadeque** (Barranco de Guayadeque) | Pan con alioli, **papas arrugadas con mojo rojo**, carne de cerdo frita, queso frito y ropa vieja | Barato, y sigue siéndolo |
 | **Asadero La Caldera** (Firgas, Calle Caldera 14) | Queso asado, papas arrugadas con mojo, croquetas de dátiles, garbanzada y bistec de cerdo | Unos 12 € (en 2022) |
-| **Tejeda** | Dulces de almendra y helados | — |
+| **Dulcería Nublo** y **Casa de la Almendra** (Tejeda) | Café con dulces de almendra y helados artesanales | — |
 
 > En el Asadero La Caldera pedimos pan, media ración de queso asado, media de papas arrugadas con un mojo buenísimo, media de croquetas de dátiles, una tapa de garbanzada y bistec de cerdo: dos filetes enormes y jugosos por 5,20 €. Con dos cafés y dos botellas grandes de agua, salimos a 12 € por cabeza… ¡y casi salimos rodando!
 {: .dato}
@@ -259,4 +259,6 @@ Nos quedaron pendientes, y son obligados la próxima vez:
 - [Asadero La Caldera (Gastroranking)](https://gastroranking.es/r/asadero-la-caldera_73527/)
 - [Jardín Botánico Viera y Clavijo](https://www.grancanaria.com/turismo/en/nature/swimming-in-a-sea-of-strange-plants/)
 - [Cicar: alquiler de coches](https://www.cicar.com/)
+- [Dulcería Nublo (Gastroranking)](https://gastroranking.es/r/dulceria-nublo_97835/)
+- [Casa de la Almendra (Gastroranking)](https://gastroranking.es/r/restaurante-la-casa-de-la-almendra_210614/)
 - [Aminta Home (Kayak)](https://www.kayak.es/Las-Palmas-de-Gran-Canaria-Hoteles-Aminta-Home.2783167.ksp)
