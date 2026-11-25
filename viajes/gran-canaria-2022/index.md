@@ -209,7 +209,7 @@ Estos dos restaurantes, el Asadero La Caldera y el Bar Restaurante Guayadeque, s
 
 - **Las Palmas de Gran Canaria**: buena base para recorrer toda la isla en coche, a unos 20 minutos del aeropuerto.
 
-Nosotros nos alojamos en **Aminta Home**, un *bed & breakfast* en una casa canaria tradicional. Está en la zona de Tafira (Calle Hernán Pérez de Grado, 30), a unos 3,5 km del centro de Las Palmas y muy cerca del Jardín Botánico. Tiene salón y comedor compartidos y un patio.
+Nosotros nos alojamos en **Aminta Home**, un *bed & breakfast* en una casa canaria tradicional. Está en la Calle Hernán Pérez de Grado, 30, a **1 km andando de la Catedral de Santa Ana**, así que podéis ir a pie al casco antiguo de Vegueta. Tiene salón y comedor compartidos y un patio.
 
 En 2022 pagamos **181 € por las 4 noches, con desayuno incluido**, para los dos (unos 45 € la noche). Una relación calidad-precio estupenda.
 
