@@ -1,0 +1,28 @@
+{%- comment -%}
+  Mapa de la guía con los lugares de la cabecera (campo `lugares`).
+  Uso dentro de index.md:  {% include mapa.html %}
+{%- endcomment -%}
+{%- if page.lugares -%}
+{% include leaflet.html %}
+<div class="mapa" id="mapa-guia" role="region" aria-label="Mapa de los lugares del viaje"></div>
+<ul class="mapa-leyenda">
+  {%- for l in page.lugares -%}
+  <li><span class="pin-num">{{ forloop.index }}</span> {{ l.nombre }}{% if l.dia %} <small>· Día {{ l.dia }}</small>{% endif %}</li>
+  {%- endfor -%}
+</ul>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.L) return;
+  var lugares = [{% for l in page.lugares %}{ n: {{ l.nombre | jsonify }}, c: [{{ l.coordenadas[0] }}, {{ l.coordenadas[1] }}], d: {{ l.dia | default: 0 }} }{% unless forloop.last %},{% endunless %}{% endfor %}];
+  var mapa = L.map('mapa-guia', { scrollWheelZoom: false });
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '© OpenStreetMap' }).addTo(mapa);
+  var grupo = [];
+  lugares.forEach(function (l, i) {
+    var icono = L.divIcon({ className: 'pin', html: '<span>' + (i + 1) + '</span>', iconSize: [28, 28], iconAnchor: [14, 14] });
+    L.marker(l.c, { icon: icono }).addTo(mapa).bindPopup('<strong>' + l.n + '</strong>' + (l.d ? '<br>Día ' + l.d : ''));
+    grupo.push(l.c);
+  });
+  mapa.fitBounds(grupo, { padding: [30, 30] });
+});
+</script>
+{%- endif -%}

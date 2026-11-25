@@ -1,0 +1,20 @@
+{%- comment -%}
+  Gráfico de barras del presupuesto (campo `gastos` de la cabecera).
+  Uso dentro de index.md:  {% include gastos.html %}
+{%- endcomment -%}
+{%- if page.gastos -%}
+{%- assign total = 0 -%}{%- assign maximo = 0 -%}
+{%- for g in page.gastos -%}{%- assign total = total | plus: g.importe -%}{%- if g.importe > maximo -%}{%- assign maximo = g.importe -%}{%- endif -%}{%- endfor -%}
+<div class="gastos">
+  {%- for g in page.gastos -%}
+  {%- assign pct = g.importe | times: 100.0 | divided_by: maximo | round -%}
+  {%- assign parte = g.importe | times: 100.0 | divided_by: total | round -%}
+  <div class="gasto">
+    <span class="gasto-concepto">{{ g.icono }} {{ g.concepto }}</span>
+    <span class="gasto-barra"><span style="width: {{ pct }}%"></span></span>
+    <span class="gasto-importe">{{ g.importe }} € <small>({{ parte }}%)</small></span>
+  </div>
+  {%- endfor -%}
+  <p class="gastos-total">Total: <strong>{{ total }} €</strong> {{ page.gastos_nota | default: "por persona" }}</p>
+</div>
+{%- endif -%}

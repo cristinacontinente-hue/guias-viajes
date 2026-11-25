@@ -4,15 +4,31 @@ title: "Viajes Continente"
 ---
 {%- assign viajes = site.pages | where: "layout", "viaje" | sort: "fecha_viaje", "last" | reverse -%}
 {%- assign etiquetas = viajes | map: "etiquetas" | join: "," | split: "," | uniq | sort -%}
+{%- assign dias = 0 -%}{%- assign paises = "" -%}
+{%- for v in viajes -%}
+  {%- assign d = v.duracion | plus: 0 -%}{%- assign dias = dias | plus: d -%}
+  {%- assign pais = v.destino | split: "," | last | strip -%}{%- assign paises = paises | append: pais | append: "|" -%}
+{%- endfor -%}
+{%- assign paises = paises | split: "|" | uniq -%}
 
 <section class="portada-cabecera contenedor">
   <p class="hola">👋 ¡Hola! ¡Bienvenidos a Viajes Continente!</p>
   <h1>Guías de <span>viaje</span></h1>
   <p class="intro">Viajes que hemos hecho, contados día a día: qué ver, dónde comer, dónde dormir y cuánto cuesta.</p>
+  {% if viajes.size > 0 %}
+  <ul class="cifras">
+    <li><strong>{{ viajes.size }}</strong> {% if viajes.size == 1 %}viaje{% else %}viajes{% endif %}</li>
+    <li><strong>{{ paises.size }}</strong> {% if paises.size == 1 %}país{% else %}países{% endif %}</li>
+    <li><strong>{{ dias }}</strong> días viajando</li>
+  </ul>
+  {% endif %}
 </section>
 
 <main class="contenedor">
   {% if viajes.size > 0 %}
+    <div class="buscador">
+      <input type="search" id="buscar" placeholder="🔍 Buscar destino, comida, playa…" aria-label="Buscar en los viajes">
+    </div>
     {% if etiquetas.size > 0 %}
     <div class="filtros" role="group" aria-label="Filtrar por tipo de viaje">
       <button class="filtro activo" data-filtro="todos">Todos</button>
@@ -22,13 +38,14 @@ title: "Viajes Continente"
 
     <div class="tarjetas" id="tarjetas">
       {% for v in viajes %}
-      <a class="tarjeta" href="{{ v.url | relative_url }}" data-etiquetas="{{ v.etiquetas | join: ',' | downcase }}">
+      <a class="tarjeta" href="{{ v.url | relative_url }}" data-etiquetas="{{ v.etiquetas | join: ',' | downcase }}" data-texto="{{ v.title | append: ' ' | append: v.destino | append: ' ' | append: v.resumen | append: ' ' | append: v.etiquetas | downcase | escape }}">
         <div class="tarjeta-foto{% unless v.portada %} sin-foto{% endunless %}">
           {% if v.portada %}<img src="{{ v.url | relative_url }}{{ v.portada }}" alt="{{ v.destino }}" loading="lazy">{% endif %}
           {% if v.fechas %}<span class="tarjeta-fecha">{{ v.fechas }}</span>{% endif %}
+          {% if v.ejemplo %}<span class="tarjeta-ejemplo">Ejemplo</span>{% endif %}
         </div>
         <div class="tarjeta-cuerpo">
-          <p class="tarjeta-destino">📍 {{ v.destino }}</p>
+          <p class="tarjeta-destino">📍 {{ v.destino }} {% include estrellas.html valor=v.valoracion %}</p>
           <h2>{{ v.title }}</h2>
           {% if v.resumen %}<p class="tarjeta-resumen">{{ v.resumen }}</p>{% endif %}
           <p class="tarjeta-datos">
@@ -41,7 +58,30 @@ title: "Viajes Continente"
       </a>
       {% endfor %}
     </div>
-    <p class="sin-resultados" id="sin-resultados" hidden>No hay viajes de este tipo todavía.</p>
+    <p class="sin-resultados" id="sin-resultados" hidden>No hay viajes que coincidan. Prueba con otra palabra o tipo de viaje.</p>
+
+    {%- assign con_mapa = viajes | where_exp: "v", "v.coordenadas" -%}
+    {% if con_mapa.size > 0 %}
+    <section class="mapa-viajes">
+      <h2>🗺 Dónde hemos estado</h2>
+      {% include leaflet.html %}
+      <div class="mapa" id="mapa-portada" role="region" aria-label="Mapa de todos los viajes"></div>
+    </section>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!window.L) return;
+      var viajes = [{% for v in con_mapa %}{ t: {{ v.title | jsonify }}, d: {{ v.destino | jsonify }}, u: {{ v.url | relative_url | jsonify }}, c: [{{ v.coordenadas[0] }}, {{ v.coordenadas[1] }}] }{% unless forloop.last %},{% endunless %}{% endfor %}];
+      var mapa = L.map('mapa-portada', { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '© OpenStreetMap' }).addTo(mapa);
+      var puntos = viajes.map(function (v) {
+        var icono = L.divIcon({ className: 'pin', html: '<span>✈</span>', iconSize: [30, 30], iconAnchor: [15, 15] });
+        L.marker(v.c, { icon: icono }).addTo(mapa).bindPopup('<a href="' + v.u + '"><strong>' + v.t + '</strong></a><br>' + v.d);
+        return v.c;
+      });
+      if (puntos.length === 1) mapa.setView(puntos[0], 6); else mapa.fitBounds(puntos, { padding: [40, 40], maxZoom: 7 });
+    });
+    </script>
+    {% endif %}
   {% else %}
     <div class="vacio">
       <p class="vacio-icono">🧳</p>
@@ -55,20 +95,29 @@ title: "Viajes Continente"
 (function () {
   var botones = document.querySelectorAll('.filtro');
   var tarjetas = document.querySelectorAll('.tarjeta');
+  var buscar = document.getElementById('buscar');
   var aviso = document.getElementById('sin-resultados');
-  botones.forEach(function (b) {
-    b.addEventListener('click', function () {
-      botones.forEach(function (x) { x.classList.remove('activo'); });
-      b.classList.add('activo');
-      var f = b.dataset.filtro, visibles = 0;
-      tarjetas.forEach(function (t) {
-        var etq = t.dataset.etiquetas.split(',').map(function (s) { return s.trim(); });
-        var ver = f === 'todos' || etq.indexOf(f) !== -1;
-        t.hidden = !ver;
-        if (ver) visibles++;
-      });
-      if (aviso) aviso.hidden = visibles > 0;
+  var filtro = 'todos';
+  function quitarTildes(s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+  function aplicar() {
+    var q = buscar ? quitarTildes(buscar.value.trim()) : '', visibles = 0;
+    tarjetas.forEach(function (t) {
+      var etq = t.dataset.etiquetas.split(',').map(function (s) { return s.trim(); });
+      var ver = (filtro === 'todos' || etq.indexOf(filtro) !== -1) && (!q || quitarTildes(t.dataset.texto).indexOf(q) !== -1);
+      t.hidden = !ver;
+      if (ver) visibles++;
     });
-  });
+    if (aviso) aviso.hidden = visibles > 0;
+  }
+  function elegir(f) {
+    filtro = f;
+    botones.forEach(function (x) { x.classList.toggle('activo', x.dataset.filtro === f); });
+    aplicar();
+  }
+  botones.forEach(function (b) { b.addEventListener('click', function () { elegir(b.dataset.filtro); }); });
+  if (buscar) buscar.addEventListener('input', aplicar);
+  // Permite enlazar a un tipo de viaje: ?tipo=playa
+  var tipo = new URLSearchParams(location.search).get('tipo');
+  if (tipo && document.querySelector('.filtro[data-filtro="' + CSS.escape(tipo) + '"]')) elegir(tipo);
 })();
 </script>

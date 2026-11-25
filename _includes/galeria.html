@@ -1,0 +1,14 @@
+{%- comment -%}
+  Galería de fotos (campo `galeria` de la cabecera). Se amplían al pulsarlas.
+  Uso dentro de index.md:  {% include galeria.html %}
+{%- endcomment -%}
+{%- if page.galeria -%}
+<div class="galeria">
+  {%- for f in page.galeria -%}
+  <figure>
+    <img src="{{ page.url | relative_url }}{{ f.archivo }}" alt="{{ f.texto }}" loading="lazy">
+    <figcaption>{{ f.texto }}</figcaption>
+  </figure>
+  {%- endfor -%}
+</div>
+{%- endif -%}

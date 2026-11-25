@@ -2,22 +2,34 @@
 layout: default
 ---
 {%- capture base -%}{{ page.url | relative_url }}{%- endcapture -%}
+{%- assign palabras = content | strip_html | number_of_words -%}
+{%- assign minutos = palabras | divided_by: 200 | plus: 1 -%}
 <article class="guia">
   <section class="hero{% unless page.portada %} sin-foto{% endunless %}"{% if page.portada %} style="background-image:url('{{ base }}{{ page.portada }}')"{% endif %}>
     <div class="hero-texto">
       <p class="hero-destino">📍 {{ page.destino }}</p>
       <h1>{{ page.title }}</h1>
       {% if page.resumen %}<p class="hero-resumen">{{ page.resumen }}</p>{% endif %}
+      <p class="hero-meta">
+        {% include estrellas.html valor=page.valoracion %}
+        <span>📖 {{ minutos }} min de lectura</span>
+      </p>
     </div>
   </section>
 
   <div class="contenedor">
+    {% if page.ejemplo %}
+    <p class="aviso-ejemplo">🧪 <strong>Guía de ejemplo.</strong> Los restaurantes, alojamientos, precios y fotos son inventados: sirve para enseñar cómo se ve una guía en la web.</p>
+    {% endif %}
+
     <dl class="ficha">
       {% if page.fechas %}<div><dt>📅 Cuándo</dt><dd>{{ page.fechas }}</dd></div>{% endif %}
       {% if page.duracion %}<div><dt>⏱ Duración</dt><dd>{{ page.duracion }}</dd></div>{% endif %}
       {% if page.viajeros %}<div><dt>👥 Quién</dt><dd>{{ page.viajeros }}</dd></div>{% endif %}
       {% if page.presupuesto %}<div><dt>💶 Presupuesto</dt><dd><span class="euros">{% include presupuesto.html nivel=page.presupuesto %}</span> {{ page.presupuesto }}</dd></div>{% endif %}
-      {% if page.etiquetas %}<div class="ficha-etiquetas"><dt>🏷 Tipo de viaje</dt><dd>{% for e in page.etiquetas %}<span class="chip">{{ e }}</span>{% endfor %}</dd></div>{% endif %}
+      {% if page.valoracion %}<div><dt>⭐ Nuestra nota</dt><dd>{% include estrellas.html valor=page.valoracion %}</dd></div>{% endif %}
+      {% if page.ideal_para %}<div><dt>🎯 Ideal para</dt><dd>{{ page.ideal_para }}</dd></div>{% endif %}
+      {% if page.etiquetas %}<div class="ficha-etiquetas"><dt>🏷 Tipo de viaje</dt><dd>{% for e in page.etiquetas %}<a class="chip" href="{{ '/' | relative_url }}?tipo={{ e | downcase | uri_escape }}">{{ e }}</a>{% endfor %}</dd></div>{% endif %}
     </dl>
 
     {% if page.lo_mejor or page.no_repetiriamos %}
@@ -37,6 +49,11 @@ layout: default
     </div>
     {% endif %}
 
+    <div class="acciones">
+      <button type="button" class="boton" id="compartir">🔗 Compartir</button>
+      <button type="button" class="boton" onclick="window.print()">🖨 Imprimir / PDF</button>
+    </div>
+
     <nav class="indice" id="indice" aria-label="Secciones de la guía"></nav>
 
     <div class="contenido" id="contenido">
@@ -44,9 +61,29 @@ layout: default
     </div>
 
     {% if page.ultima_revision %}<p class="revision">Última revisión: {{ page.ultima_revision | date: "%d/%m/%Y" }}</p>{% endif %}
+
+    {%- assign otros = site.pages | where: "layout", "viaje" | sort: "fecha_viaje", "last" | reverse -%}
+    {%- if otros.size > 1 -%}
+    <section class="otros">
+      <h2>Otros viajes</h2>
+      <div class="otros-lista">
+        {%- assign n = 0 -%}
+        {%- for v in otros -%}{%- if v.url != page.url and n < 3 -%}{%- assign n = n | plus: 1 -%}
+        <a class="otro" href="{{ v.url | relative_url }}">
+          {% if v.portada %}<img src="{{ v.url | relative_url }}{{ v.portada }}" alt="" loading="lazy">{% endif %}
+          <span><strong>{{ v.title }}</strong><small>{{ v.destino }} · {{ v.fechas }}</small></span>
+        </a>
+        {%- endif -%}{%- endfor -%}
+      </div>
+    </section>
+    {%- endif -%}
+
     <p class="volver"><a href="{{ '/' | relative_url }}">← Ver todos los viajes</a></p>
   </div>
 </article>
+
+<button type="button" class="arriba" id="arriba" aria-label="Volver arriba">↑</button>
+<div class="visor" id="visor" hidden><button type="button" aria-label="Cerrar">✕</button><img alt=""><p></p></div>
 
 <script>
 (function () {
@@ -84,5 +121,33 @@ layout: default
     }
     h2.after(linea);
   });
+
+  // Fotos ampliables al pulsarlas
+  var visor = document.getElementById('visor');
+  var vImg = visor.querySelector('img'), vTxt = visor.querySelector('p');
+  contenido.querySelectorAll('img').forEach(function (img) {
+    img.classList.add('ampliable');
+    img.addEventListener('click', function () {
+      vImg.src = img.src; vImg.alt = img.alt; vTxt.textContent = img.alt;
+      visor.hidden = false;
+    });
+  });
+  visor.addEventListener('click', function () { visor.hidden = true; });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') visor.hidden = true; });
+
+  // Compartir
+  document.getElementById('compartir').addEventListener('click', function () {
+    var datos = { title: document.title, url: location.href };
+    if (navigator.share) { navigator.share(datos).catch(function () {}); return; }
+    try {
+      navigator.clipboard.writeText(location.href);
+      this.textContent = '✅ Enlace copiado';
+    } catch (e) { prompt('Copia este enlace:', location.href); }
+  });
+
+  // Botón volver arriba
+  var arriba = document.getElementById('arriba');
+  window.addEventListener('scroll', function () { arriba.classList.toggle('visible', window.scrollY > 600); });
+  arriba.addEventListener('click', function () { window.scrollTo({ top: 0 }); });
 })();
 </script>

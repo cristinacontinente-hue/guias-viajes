@@ -1,0 +1,1 @@
+{%- if include.valor -%}<span class="estrellas" title="{{ include.valor }} de 5" aria-label="Valoración: {{ include.valor }} de 5">{%- for i in (1..5) -%}{%- if i <= include.valor -%}★{%- else -%}<span class="apagada">★</span>{%- endif -%}{%- endfor -%}</span>{%- endif -%}

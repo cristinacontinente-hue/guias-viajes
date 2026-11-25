@@ -74,6 +74,43 @@ Después, el contenido con estas secciones y en este orden (si una no aplica, om
 Tono: cercano, práctico y en primera persona del plural ("os recomendamos", "fuimos a...")
 si el viaje es vivido; neutro si es una guía de planificación. Frases cortas, nada de relleno.
 
+## Funciones extra de cada guía (todas opcionales)
+
+Las guías de ejemplo `viajes/ejemplo-lisboa-2026/` y `viajes/ejemplo-asturias-verano-2025/`
+usan **todas** las funciones: cópialas como plantilla. Campos extra de la cabecera:
+
+```yaml
+ejemplo: true                 # SOLO en guías de ejemplo: muestra un aviso de datos inventados
+valoracion: 5                 # nota de 1 a 5 (estrellas)
+ideal_para: "Comer bien y andar mucho"
+coordenadas: [38.7223, -9.1393]   # punto del viaje en el mapa de la portada
+lugares:                          # mapa de la guía, con chinchetas numeradas
+  - { nombre: "Torre de Belém", coordenadas: [38.6916, -9.2160], dia: 3 }
+gastos:                           # gráfico de barras del presupuesto
+  - { concepto: "Alojamiento", icono: "🛏", importe: 320 }
+gastos_nota: "por persona, con vuelos desde Madrid"
+galeria:                          # cuadrícula de fotos ampliables
+  - { archivo: imagenes/tranvia-28.jpg, texto: "El tranvía 28 subiendo por Alfama" }
+```
+
+Dentro del texto (`index.md`):
+
+- `{% include mapa.html %}` → mapa con los `lugares` (al principio del itinerario).
+- `{% include gastos.html %}` → barras del presupuesto (en "Presupuesto orientativo").
+- `{% include galeria.html %}` → galería (sección `## Galería`, justo antes de "Fuentes").
+- Cajas de consejo: un párrafo que empiece por `> ` y, en la línea siguiente,
+  `{: .truco}` (💡), `{: .ojo}` (⚠️, avisos), `{: .dato}` (📌) o `{: .cita}` (💬).
+- Datos sin verificar: `*(por confirmar)*{: .por-confirmar}` (sale resaltado en amarillo).
+- Itinerario: empieza cada momento con 🌅 **Mañana:**, ☀️ **Tarde:**, 🌙 **Noche:**.
+- Lista "Qué llevar" con casillas: `- [x] Chubasquero` / `- [ ] Paraguas`.
+- Las fotos dentro del texto se amplían al pulsarlas.
+
+Se generan solos, sin hacer nada: tiempo de lectura, botones de compartir e imprimir/PDF,
+"Otros viajes" al final, botón de volver arriba, cifras de la portada (viajes, países, días),
+el buscador y el mapa de la portada.
+
+Las coordenadas se sacan de OpenStreetMap o Google Maps (clic derecho en el sitio).
+
 ## Diseño de la web
 
 - La web se llama **Viajes Continente** ("Un placer para tu mente"). Colores del logo:
