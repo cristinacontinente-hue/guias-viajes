@@ -40,7 +40,7 @@ lugares:
 galeria:
   - { archivo: imagenes/dunas-maspalomas-atardecer.jpg, texto: "Atardecer en las Dunas de Maspalomas" }
   - { archivo: imagenes/mirador-cumbre-vistas.jpg, texto: "Vistas de las montañas de la cumbre desde un mirador" }
-  - { archivo: imagenes/escultura-cesta-roque.jpg, texto: "Escultura con forma de cesta, con un roque al fondo" }
+  - { archivo: imagenes/cesta-gigante-tejeda-bentayga.jpg, texto: "La Cesta gigante de Tejeda, con el Roque Bentayga al fondo" }
   - { archivo: imagenes/sendero-s70-roque-nublo.jpg, texto: "Pinar y montañas desde el sendero S-70 al Roque Nublo" }
   - { archivo: imagenes/roque-nublo-entre-rocas.jpg, texto: "El Roque Nublo asomando entre las rocas" }
   - { archivo: imagenes/roque-nublo-vistas-teide-bentayga.jpg, texto: "Desde el Roque Nublo: el Bentayga, el mar de nubes y el Teide" }
@@ -130,7 +130,9 @@ De camino a Artenara, nos paramos en un mirador donde vimos muchos coches y moto
 - **Museo Etnográfico Casas Cuevas**: gratuito, con donativo voluntario. Muy recomendable: cuenta cómo se vivía, y se sigue viviendo, en las casas cueva.
 - Paseo por la **iglesia de San Matías** y subida a la **ermita de la Cuevita**.
 
-☀️ **Tarde:** comida en **Tejeda** nada más llegar y paseo por su centro histórico, muy bonito. Café y un dulce de almendra para compartir. En Tejeda son típicos los **dulces de almendra** y los **helados**.
+☀️ **Tarde:** comida en **Tejeda** nada más llegar y paseo por su centro histórico, muy bonito. Café y un dulce de almendra para compartir. En Tejeda son típicos los **dulces de almendra** y los **helados**. No os vayáis sin haceros una foto en la **Cesta gigante de Tejeda**, con el Roque Bentayga al fondo.
+
+![Sentada dentro de la Cesta gigante de Tejeda, con el Roque Bentayga al fondo](imagenes/cesta-gigante-tejeda-bentayga.jpg)
 
 🌙 **Atardecer:** el **Roque Nublo**, un lugar mágico que jamás podremos olvidar. La carretera tiene muchas curvas, pero se va disfrutando del paisaje.
 - Dejamos el coche en el aparcamiento de la **Degollada de la Goleta**. Desde 2025 ya no se puede: mirad el aviso de abajo.
@@ -144,8 +146,6 @@ Nos quedamos allí una hora y media sentados, enamorados del silencio y de la pa
 {: .ojo}
 
 ![Vistas de las montañas y barrancos de la cumbre desde un mirador](imagenes/mirador-cumbre-vistas.jpg)
-
-![Sentada dentro de una gran escultura con forma de cesta, con un roque al fondo](imagenes/escultura-cesta-roque.jpg)
 
 ![Pinar y montañas a contraluz desde el sendero S-70, camino del Roque Nublo](imagenes/sendero-s70-roque-nublo.jpg)
 
