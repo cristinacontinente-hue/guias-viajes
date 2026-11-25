@@ -46,9 +46,9 @@ a { color: var(--acento); }
 /* Barra superior */
 .barra { padding: 10px 16px; border-bottom: 1px solid var(--borde); background: var(--fondo); }
 .marca { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.15rem; color: var(--texto); text-decoration: none; }
-.marca img { height: 64px; width: auto; display: block; }
+.marca img { height: 96px; width: auto; display: block; }
+@media (max-width: 600px) { .marca img { height: 68px; } }
 .marca small { display: block; font-weight: 500; font-size: .75rem; color: var(--acento); letter-spacing: .04em; text-transform: uppercase; }
-.portada-logo { width: min(380px, 85%); border-radius: 6px; height: auto; display: block; margin: 0 auto 12px; }
 h1 span { color: var(--acento); }
 
 /* Portada */

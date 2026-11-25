@@ -7,8 +7,6 @@ title: "Viajes Continente"
 
 <section class="portada-cabecera contenedor">
   <p class="hola">👋 ¡Hola! ¡Bienvenidos a Viajes Continente!</p>
-  {%- assign logo = site.static_files | where_exp: "f", "f.path contains '/assets/logo'" | first -%}
-  {%- if logo -%}<img class="portada-logo" src="{{ logo.path | relative_url }}" alt="{{ site.title }}: {{ site.lema }}">{%- endif -%}
   <h1>Guías de <span>viaje</span></h1>
   <p class="intro">Viajes que hemos hecho, contados día a día: qué ver, dónde comer, dónde dormir y cuánto cuesta.</p>
 </section>

@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="{{ '/assets/estilos.css' | relative_url }}">
 </head>
 <body>
-  {%- unless page.url == "/" or page.url == "/index.html" %}
   <header class="barra">
     {%- assign logo = site.static_files | where_exp: "f", "f.path contains '/assets/logo'" | first -%}
     <a class="marca" href="{{ '/' | relative_url }}">
@@ -16,7 +15,6 @@
       {%- else -%}<span>{{ site.title }}<small>{{ site.lema }}</small></span>{%- endif -%}
     </a>
   </header>
-  {%- endunless %}
   {{ content }}
   <footer class="pie">
     <p>{{ site.title }} · Viajes hechos y contados en primera persona</p>
