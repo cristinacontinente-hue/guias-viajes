@@ -184,13 +184,13 @@ Después, la **Playa de Sotavento**. Tiene su encanto, aunque está llena de gen
 
 ☀️ **Tarde:** **playas de Jandía** y la **Playa de Mal Nombre**, mi favorita: con rincones y dunas, un lugar paradisíaco. Seguimos hasta **Morro Jable**: la Playa del Matorral y el faro.
 
-🌙 **Atardecer:** en la **Playa del Viejo Rey**. Un atardecer idílico, con mucha gente haciendo surf.
+🌙 **Atardecer:** en la **Playa del Viejo Rey**, junto a La Pared. Un atardecer idílico, con mucha gente haciendo surf. Lo vimos desde lo alto de los acantilados, con la playa a nuestros pies.
 
 > **Cofete, visita obligada:** nosotros no llegamos a ir por falta de tiempo, pero es una zona increíble que queremos conocer. Si tenéis más días, os recomendamos dedicarle un día entero. Se tarda alrededor de una hora desde Morro Jable por una pista de tierra de unos 20 km. Es una playa para verla, no para bañarse, por las corrientes. Muy cerca está el **Roque del Moro**. También se puede ir en una guagua todoterreno desde Morro Jable: horarios y precio *(por confirmar)*{: .por-confirmar}. En Cofete no hay servicios: llevad agua y comida.
 {: .dato}
 
 ![La Playa de Mal Nombre: arena dorada, aguas turquesas y las montañas de Jandía al fondo](imagenes/playa-mal-nombre.jpg)
-![Atardecer en la Playa del Viejo Rey, con los acantilados, las olas y dos surfistas en la orilla](imagenes/atardecer-playa-viejo-rey.jpg)
+![Atardecer sobre la Playa del Viejo Rey desde los acantilados de La Pared, con las olas y dos surfistas en la orilla](imagenes/atardecer-playa-viejo-rey.jpg)
 
 ### Día 5 (miércoles): Dunas de Corralejo y Puertito de los Molinos
 
