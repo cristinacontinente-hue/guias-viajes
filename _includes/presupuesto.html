@@ -1,0 +1,2 @@
+{%- assign p = include.nivel | downcase -%}
+{%- if p contains "bajo" -%}€{%- elsif p contains "alto" -%}€€€{%- elsif p contains "medio" -%}€€{%- else -%}{{ include.nivel }}{%- endif -%}

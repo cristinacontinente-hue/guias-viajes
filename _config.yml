@@ -1,0 +1,27 @@
+title: "Viajes Continente"
+lema: "Un placer para tu mente"
+description: "Viajes que hemos hecho, contados día a día: qué ver, dónde comer, dónde dormir y cuánto cuesta."
+lang: es
+url: "https://cristinacontinente-hue.github.io"
+baseurl: "/guias-viajes"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+plugins:
+  - jekyll-optional-front-matter
+
+exclude:
+  - CLAUDE.md
+  - README.md
+  - .github
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  - scope:
+      path: "viajes"
+    values:
+      layout: viaje

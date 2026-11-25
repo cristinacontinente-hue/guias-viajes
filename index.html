@@ -1,38 +1,76 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guías de viaje</title>
-  <style>
-    :root { --fondo: #faf7f2; --texto: #2b2b2b; --suave: #6b6b6b; --acento: #d9653b; }
-    @media (prefers-color-scheme: dark) {
-      :root { --fondo: #1c1b1a; --texto: #eeeae4; --suave: #a8a39b; --acento: #f08a5d; }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-      background: var(--fondo); color: var(--texto);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6;
-      padding: 16px;
-    }
-    main { max-width: 640px; text-align: center; }
-    h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .5rem; }
-    h1 span { color: var(--acento); }
-    p { color: var(--suave); font-size: 1.1rem; margin: 0 0 1.5rem; }
-    .hola { font-size: 1.5rem; color: var(--acento); margin-bottom: .5rem; }
-    .pronto {
-      display: inline-block; padding: .5rem 1rem; border: 1px solid var(--acento);
-      border-radius: 999px; color: var(--acento); font-size: .95rem;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <p class="hola">👋 ¡Hola, Cristina!</p>
-    <h1>Guías de <span>viaje</span></h1>
-    <p>Itinerarios día a día, dónde comer, dónde dormir y consejos prácticos de cada destino.</p>
-    <span class="pronto">✈️ Muy pronto, las primeras guías</span>
-  </main>
-</body>
-</html>
+---
+layout: default
+title: "Viajes Continente"
+---
+{%- assign viajes = site.pages | where: "layout", "viaje" | sort: "fecha_viaje", "last" | reverse -%}
+{%- assign etiquetas = viajes | map: "etiquetas" | join: "," | split: "," | uniq | sort -%}
+
+<section class="portada-cabecera contenedor">
+  <p class="hola">👋 ¡Hola! ¡Bienvenidos a Viajes Continente!</p>
+  {%- assign logo = site.static_files | where_exp: "f", "f.path contains '/assets/logo'" | first -%}
+  {%- if logo -%}<img class="portada-logo" src="{{ logo.path | relative_url }}" alt="{{ site.title }}: {{ site.lema }}">{%- endif -%}
+  <h1>Guías de <span>viaje</span></h1>
+  <p class="intro">Viajes que hemos hecho, contados día a día: qué ver, dónde comer, dónde dormir y cuánto cuesta.</p>
+</section>
+
+<main class="contenedor">
+  {% if viajes.size > 0 %}
+    {% if etiquetas.size > 0 %}
+    <div class="filtros" role="group" aria-label="Filtrar por tipo de viaje">
+      <button class="filtro activo" data-filtro="todos">Todos</button>
+      {% for e in etiquetas %}{% assign e2 = e | strip %}{% if e2 != "" %}<button class="filtro" data-filtro="{{ e2 | downcase }}">{{ e2 | capitalize }}</button>{% endif %}{% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="tarjetas" id="tarjetas">
+      {% for v in viajes %}
+      <a class="tarjeta" href="{{ v.url | relative_url }}" data-etiquetas="{{ v.etiquetas | join: ',' | downcase }}">
+        <div class="tarjeta-foto{% unless v.portada %} sin-foto{% endunless %}">
+          {% if v.portada %}<img src="{{ v.url | relative_url }}{{ v.portada }}" alt="{{ v.destino }}" loading="lazy">{% endif %}
+          {% if v.fechas %}<span class="tarjeta-fecha">{{ v.fechas }}</span>{% endif %}
+        </div>
+        <div class="tarjeta-cuerpo">
+          <p class="tarjeta-destino">📍 {{ v.destino }}</p>
+          <h2>{{ v.title }}</h2>
+          {% if v.resumen %}<p class="tarjeta-resumen">{{ v.resumen }}</p>{% endif %}
+          <p class="tarjeta-datos">
+            {% if v.duracion %}<span>⏱ {{ v.duracion }}</span>{% endif %}
+            {% if v.viajeros %}<span>👥 {{ v.viajeros }}</span>{% endif %}
+            {% if v.presupuesto %}<span title="Presupuesto {{ v.presupuesto }}">💶 {% include presupuesto.html nivel=v.presupuesto %}</span>{% endif %}
+          </p>
+          {% if v.etiquetas %}<p class="tarjeta-chips">{% for e in v.etiquetas %}<span class="chip">{{ e }}</span>{% endfor %}</p>{% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="sin-resultados" id="sin-resultados" hidden>No hay viajes de este tipo todavía.</p>
+  {% else %}
+    <div class="vacio">
+      <p class="vacio-icono">🧳</p>
+      <p><strong>Todavía no hay guías publicadas.</strong></p>
+      <p>Muy pronto, los primeros viajes.</p>
+    </div>
+  {% endif %}
+</main>
+
+<script>
+(function () {
+  var botones = document.querySelectorAll('.filtro');
+  var tarjetas = document.querySelectorAll('.tarjeta');
+  var aviso = document.getElementById('sin-resultados');
+  botones.forEach(function (b) {
+    b.addEventListener('click', function () {
+      botones.forEach(function (x) { x.classList.remove('activo'); });
+      b.classList.add('activo');
+      var f = b.dataset.filtro, visibles = 0;
+      tarjetas.forEach(function (t) {
+        var etq = t.dataset.etiquetas.split(',').map(function (s) { return s.trim(); });
+        var ver = f === 'todos' || etq.indexOf(f) !== -1;
+        t.hidden = !ver;
+        if (ver) visibles++;
+      });
+      if (aviso) aviso.hidden = visibles > 0;
+    });
+  });
+})();
+</script>

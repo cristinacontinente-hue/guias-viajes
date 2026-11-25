@@ -40,15 +40,24 @@ layout: viaje
 title: "Lisboa en 5 días"
 destino: "Lisboa, Portugal"
 fechas: "Mayo 2026"
+fecha_viaje: 2026-05-01        # para ordenar los viajes en la portada (más reciente primero)
 duracion: "5 días"
 viajeros: "Pareja"
 presupuesto: "Medio"
 portada: imagenes/portada.jpg
 resumen: "Miradores, tranvías y pastelerías: Lisboa a pie y sin prisas."
-etiquetas: [ciudad, gastronomía, europa]
+etiquetas: [ciudad, gastronomía, europa]   # se convierten en los filtros de la portada
+lo_mejor: ["Atardecer en el mirador de Santa Luzia", "Pastéis de Belém recién hechos", "Perderse por Alfama"]
+no_repetiriamos: ["Hacer cola para el tranvía 28 a mediodía"]
 ultima_revision: 2026-11-25
 ---
 ```
+
+- `presupuesto` es siempre `Bajo`, `Medio` o `Alto` (la web lo muestra como €, €€ o €€€).
+- `lo_mejor` y `no_repetiriamos` (3 puntos como máximo cada uno) salen en dos cajas de color
+  al principio de la guía. Pídele a ella estos puntos: son su opinión del viaje.
+- Usa etiquetas cortas, en minúsculas y repetidas entre viajes (`ciudad`, `playa`, `montaña`,
+  `gastronomía`, `con niños`, `europa`…) para que los filtros de la portada sirvan.
 
 Después, el contenido con estas secciones y en este orden (si una no aplica, omítela):
 
@@ -64,6 +73,15 @@ Después, el contenido con estas secciones y en este orden (si una no aplica, om
 
 Tono: cercano, práctico y en primera persona del plural ("os recomendamos", "fuimos a...")
 si el viaje es vivido; neutro si es una guía de planificación. Frases cortas, nada de relleno.
+
+## Diseño de la web
+
+- La web se llama **Viajes Continente** ("Un placer para tu mente"). Colores del logo:
+  azul marino `#2d2a6b`, naranja `#d4451a` y fondo crema `#fcf0dd`.
+- El logo va en `assets/` con un nombre que empiece por `logo` (por ejemplo `assets/logo.png`):
+  la web lo detecta y lo pone sola en la cabecera y en la portada.
+- La ficha resumen, el índice de secciones y la línea de tiempo del itinerario se generan
+  solos a partir de la cabecera y de los títulos `## ` y `### Día N: ...`.
 
 ## Imágenes
 

@@ -1,0 +1,88 @@
+---
+layout: default
+---
+{%- capture base -%}{{ page.url | relative_url }}{%- endcapture -%}
+<article class="guia">
+  <section class="hero{% unless page.portada %} sin-foto{% endunless %}"{% if page.portada %} style="background-image:url('{{ base }}{{ page.portada }}')"{% endif %}>
+    <div class="hero-texto">
+      <p class="hero-destino">📍 {{ page.destino }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.resumen %}<p class="hero-resumen">{{ page.resumen }}</p>{% endif %}
+    </div>
+  </section>
+
+  <div class="contenedor">
+    <dl class="ficha">
+      {% if page.fechas %}<div><dt>📅 Cuándo</dt><dd>{{ page.fechas }}</dd></div>{% endif %}
+      {% if page.duracion %}<div><dt>⏱ Duración</dt><dd>{{ page.duracion }}</dd></div>{% endif %}
+      {% if page.viajeros %}<div><dt>👥 Quién</dt><dd>{{ page.viajeros }}</dd></div>{% endif %}
+      {% if page.presupuesto %}<div><dt>💶 Presupuesto</dt><dd><span class="euros">{% include presupuesto.html nivel=page.presupuesto %}</span> {{ page.presupuesto }}</dd></div>{% endif %}
+      {% if page.etiquetas %}<div class="ficha-etiquetas"><dt>🏷 Tipo de viaje</dt><dd>{% for e in page.etiquetas %}<span class="chip">{{ e }}</span>{% endfor %}</dd></div>{% endif %}
+    </dl>
+
+    {% if page.lo_mejor or page.no_repetiriamos %}
+    <div class="destacados">
+      {% if page.lo_mejor %}
+      <section class="caja caja-mejor">
+        <h2>💚 Lo mejor</h2>
+        <ul>{% for x in page.lo_mejor %}<li>{{ x }}</li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+      {% if page.no_repetiriamos %}
+      <section class="caja caja-no">
+        <h2>🙅 Lo que no repetiríamos</h2>
+        <ul>{% for x in page.no_repetiriamos %}<li>{{ x }}</li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <nav class="indice" id="indice" aria-label="Secciones de la guía"></nav>
+
+    <div class="contenido" id="contenido">
+      {{ content }}
+    </div>
+
+    {% if page.ultima_revision %}<p class="revision">Última revisión: {{ page.ultima_revision | date: "%d/%m/%Y" }}</p>{% endif %}
+    <p class="volver"><a href="{{ '/' | relative_url }}">← Ver todos los viajes</a></p>
+  </div>
+</article>
+
+<script>
+(function () {
+  var contenido = document.getElementById('contenido');
+  var indice = document.getElementById('indice');
+  var h2s = contenido.querySelectorAll('h2');
+
+  // Índice para saltar a cada sección
+  if (h2s.length > 1) {
+    h2s.forEach(function (h) {
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent;
+      indice.appendChild(a);
+    });
+  } else {
+    indice.remove();
+  }
+
+  // Itinerario como línea de tiempo: agrupa cada "### Día N" con su texto
+  h2s.forEach(function (h2) {
+    if (!/itinerario/i.test(h2.textContent)) return;
+    var linea = document.createElement('div');
+    linea.className = 'linea-tiempo';
+    var nodo = h2.nextElementSibling, dia = null;
+    while (nodo && nodo.tagName !== 'H2') {
+      var siguiente = nodo.nextElementSibling;
+      if (nodo.tagName === 'H3') {
+        dia = document.createElement('div');
+        dia.className = 'dia';
+        linea.appendChild(dia);
+      }
+      (dia || linea).appendChild(nodo);
+      nodo = siguiente;
+    }
+    h2.after(linea);
+  });
+})();
+</script>
