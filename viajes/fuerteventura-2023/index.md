@@ -44,9 +44,11 @@ lugares:
   - { nombre: "Dunas y Grandes Playas de Corralejo", coordenadas: [28.6900, -13.8350], dia: 5 }
   - { nombre: "Puertito de los Molinos", coordenadas: [28.5480, -14.0620], dia: 5 }
 galeria:
+  - { archivo: imagenes/vistas-calderon-hondo.jpg, texto: "Vistas desde el Calderón Hondo" }
   - { archivo: imagenes/popcorn-beach-palomitas.jpg, texto: "Las palomitas de Popcorn Beach" }
   - { archivo: imagenes/isla-de-lobos-caldera.jpg, texto: "Subiendo a la caldera en la Isla de Lobos" }
   - { archivo: imagenes/estatuas-guise-ayose.jpg, texto: "Las estatuas del Mirador de Guise y Ayose" }
+  - { archivo: imagenes/molino-el-durazno-antigua.jpg, texto: "El Molino de El Durazno, mi favorito" }
   - { archivo: imagenes/hamburguesa-cabra-podomorfos-tindaya.jpg, texto: "Hamburguesa de cabra con vistas a Tindaya" }
   - { archivo: imagenes/letras-tindaya-montana.jpg, texto: "Las letras de Tindaya y su montaña" }
   - { archivo: imagenes/playa-mal-nombre.jpg, texto: "La Playa de Mal Nombre, nuestra favorita" }
@@ -119,7 +121,7 @@ Después, el **Faro del Tostón**, a 8 minutos del Cotillo. De camino pasaréis 
 
 Por la noche, paseo por **Corralejo**, con mucho ambiente. Queríamos cenar en el **Restaurante El Moral**, pero estaba cerrado ese domingo y cenamos en el **Restaurante El Horno**, en Villaverde.
 
-<!-- FOTO: Cráter del Volcán Calderón Hondo -->
+![Con los brazos en alto en el Calderón Hondo, con el mar y los volcanes del norte al fondo](imagenes/vistas-calderon-hondo.jpg)
 <!-- FOTO: El Cotillo / Faro del Tostón -->
 <!-- FOTO: Atardecer en Popcorn Beach -->
 
@@ -171,7 +173,7 @@ Cerca de allí están las **Cuevas de Ajuy**, con un sendero corto hasta las cue
 ![Entre las dos estatuas gigantes de los reyes Guise y Ayose, en su mirador](imagenes/estatuas-guise-ayose.jpg)
 
 <!-- FOTO: Puertito de Lobos -->
-<!-- FOTO: Molino de El Durazno (Antigua) -->
+![El Molino de El Durazno, en Antigua, blanco y con sus aspas de madera, entre tuneras](imagenes/molino-el-durazno-antigua.jpg)
 <!-- FOTO: Betancuria -->
 
 ### Día 4 (martes): ¡Día de playa en el sur!
