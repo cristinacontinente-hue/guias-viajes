@@ -142,7 +142,13 @@ De camino a Artenara, nos paramos en un mirador donde vimos muchos coches y moto
 
 Nos quedamos allí una hora y media sentados, enamorados del silencio y de la paz, viendo el atardecer. Cuanto más atardecía, más bonito se ponía todo: mezclas de colores, naranjas… A lo lejos, a la derecha, un **mar de nubes** parecía caer en cascada. Buscad una ventanita entre las rocas: sale una foto clave.
 
-> **Desde febrero de 2025 hace falta reserva previa para subir al Roque Nublo** en las horas de más visitas (de 9:00 a 17:00). Ya no se puede aparcar junto al inicio del sendero: se llega en un autobús lanzadera. Antes de ir, comprobad en la web del Cabildo de Gran Canaria los horarios, cómo se sube para ver el atardecer y cómo se reserva *(por confirmar)*{: .por-confirmar}.
+> **Cómo se sube hoy al Roque Nublo** (las normas cambiaron en febrero de 2025, después de nuestro viaje):
+>
+> - **Reserva previa gratuita** para subir por la Degollada de La Goleta en las horas de más visitas (de 10:00 a 17:00 según el Cabildo; algunas guías dicen desde las 9:00). Se reserva en la web oficial del Cabildo de Gran Canaria (enlace en Fuentes).
+> - **Para ver el atardecer no hace falta reserva**, porque es fuera de ese horario.
+> - **Ya no se puede aparcar en La Goleta.** Hay que dejar el coche en los aparcamientos de **Tejeda** o de **Cruz de los Llanos** y subir en la **guagua lanzadera** (línea 18 de Global). Comprobad a qué hora sale la última guagua de vuelta *(por confirmar)*{: .por-confirmar}.
+> - **Otros accesos sin reserva:** por **La Culata** o por la **Degollada de la Hoya de la Vieja**. Son más largos.
+> - Llevad **linterna** para bajar y **abrigo**: al caer el sol hace frío.
 {: .ojo}
 
 ![Vistas de las montañas y barrancos de la cumbre desde un mirador](imagenes/mirador-cumbre-vistas.jpg)
@@ -214,7 +220,7 @@ En 2022 pagamos **181 € por las 4 noches, con desayuno incluido**, para los do
 
 - **Comprobad antes de salir**: después de lluvias fuertes o temporales se suelen cerrar senderos, barrancos y carreteras de montaña. Mirad los avisos del Cabildo de Gran Canaria y de la AEMET el mismo día.
 - **Coche**: imprescindible. Las rutas por barrancos y cumbres no se pueden hacer bien en transporte público.
-- **Roque Nublo**: reserva previa y lanzadera desde 2025 (mirad el aviso del día 3).
+- **Roque Nublo**: reserva previa (gratuita) de 10:00 a 17:00 y guagua lanzadera desde 2025. Para el atardecer no hace falta reserva. Mirad el aviso del día 3.
 - **Atardeceres**: planificad cada día para terminar en un buen sitio para ver el atardecer: Maspalomas, Roque Nublo, Punta Sardina…
 - **Abrigo**: en la cumbre hace frío al caer el sol, aunque en la costa haga calor.
 - **Calzado**: cómodo y con buena suela para la Caldera de Bandama, el Barranco de las Vacas y el Roque Nublo.
@@ -243,6 +249,8 @@ Nos quedaron pendientes, y son obligados la próxima vez:
 - [Turismo de Gran Canaria](https://www.grancanaria.com/turismo/)
 - [Cabildo de Gran Canaria](https://cabildo.grancanaria.com/)
 - [AEMET: avisos meteorológicos](https://www.aemet.es/es/eltiempo/prediccion/avisos)
+- [Acceso al Roque Nublo: reservas y lanzadera (Cabildo de Gran Canaria, web oficial)](https://cabildo.grancanaria.com/acceso-al-roque-nublo)
+- [Acceso al sendero del Roque Nublo (Cabildo de Gran Canaria)](https://cabildo.grancanaria.com/w/acceso-al-sendero-roque-nublo)
 - [Reserva previa en el Roque Nublo (RTVC)](https://rtvc.es/el-acceso-a-roque-nublo-exigira-reserva-previa-a-partir-de-febrero/)
 - [Horario y reservas para subir al Roque Nublo (eldiario.es)](https://www.eldiario.es/canariasahora/sociedad/horario-subir-roque-nublo-acceder-reservar-visita_1_13415122.html)
 - [Aparcamiento en el Barranco de las Vacas (RTVC)](https://rtvc.es/piden-senalizacion-y-aparcamientos-en-barranco-de-las-vacas/)
