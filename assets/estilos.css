@@ -141,7 +141,16 @@ h1 span { color: var(--acento); }
 .indice a:hover { border-color: var(--acento); color: var(--acento); }
 
 .contenido h2 { margin-top: 2.2rem; scroll-margin-top: 64px; border-bottom: 2px solid var(--acento-suave); padding-bottom: 4px; }
-.contenido img { border-radius: 10px; display: block; margin: 1rem 0; width: 100%; max-height: 420px; object-fit: cover; }
+/* Fotos dentro del texto: enteras (sin recortar), de tamaño contenido.
+   Las fotos seguidas se agrupan en una fila (ver .fila-fotos). */
+.contenido img { border-radius: 10px; display: block; margin: 1rem auto; width: auto; max-width: 100%; height: auto; max-height: 340px; }
+.fila-fotos { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 1rem 0; }
+.fila-fotos img { margin: 0; height: 240px; max-height: none; width: auto; max-width: 100%; }
+@media (max-width: 600px) {
+  .contenido img { max-height: 280px; }
+  .fila-fotos { gap: 8px; align-items: flex-start; }
+  .fila-fotos img { height: auto; width: calc(50% - 4px); }
+}
 .contenido table { width: 100%; border-collapse: collapse; margin: 1rem 0; display: block; overflow-x: auto; }
 .contenido th, .contenido td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--borde); }
 .contenido th { background: var(--acento-suave); }
@@ -232,10 +241,16 @@ a.chip:hover { background: var(--acento); color: #fff; }
 .contenido li > input[type=checkbox] { margin-right: 8px; accent-color: var(--acento); }
 
 /* ---------- Galería y visor de fotos ---------- */
-.galeria { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin: 1rem 0; }
-.galeria figure { margin: 0; }
-.galeria img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; margin: 0 !important; }
-.galeria figcaption { font-size: .82rem; color: var(--suave); margin-top: 4px; }
+.galeria { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 1rem 0; }
+.galeria figure { margin: 0; flex: 0 0 auto; }
+.galeria img { height: 150px; width: auto; max-width: 100%; max-height: none; margin: 0 !important; }
+.galeria figcaption { font-size: .8rem; color: var(--suave); margin-top: 4px; max-width: 220px; }
+@media (max-width: 600px) {
+  .galeria { gap: 6px; align-items: flex-start; }
+  .galeria figure { width: calc(33.333% - 4px); }
+  .galeria img { height: auto; width: 100%; }
+  .galeria figcaption { display: none; }
+}
 .contenido img.ampliable { cursor: zoom-in; }
 .visor {
   position: fixed; inset: 0; z-index: 50; background: rgba(10, 10, 30, .9);

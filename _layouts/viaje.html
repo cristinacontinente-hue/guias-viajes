@@ -122,6 +122,22 @@ layout: default
     h2.after(linea);
   });
 
+  // Fotos seguidas (párrafos con solo una imagen, uno detrás de otro): en fila
+  function soloFoto(el) {
+    return el && el.tagName === 'P' && el.children.length === 1 &&
+      el.firstElementChild.tagName === 'IMG' && el.textContent.trim() === '';
+  }
+  Array.prototype.slice.call(contenido.querySelectorAll('p')).forEach(function (par) {
+    if (!par.isConnected || !soloFoto(par)) return;
+    var grupo = [par], sig = par.nextElementSibling;
+    while (soloFoto(sig)) { grupo.push(sig); sig = sig.nextElementSibling; }
+    if (grupo.length < 2) return;
+    var fila = document.createElement('div');
+    fila.className = 'fila-fotos';
+    par.before(fila);
+    grupo.forEach(function (q) { fila.appendChild(q.firstElementChild); q.replaceWith(); });
+  });
+
   // Fotos ampliables al pulsarlas
   var visor = document.getElementById('visor');
   var vImg = visor.querySelector('img'), vTxt = visor.querySelector('p');
