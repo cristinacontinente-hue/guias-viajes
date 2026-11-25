@@ -23,7 +23,7 @@ lugares:
   - { nombre: "El Bufadero (La Garita)", coordenadas: [28.0080, -15.3710], dia: 2 }
   - { nombre: "Barranco de Guayadeque", coordenadas: [27.9280, -15.4840], dia: 2 }
   - { nombre: "Agüimes", coordenadas: [27.9050, -15.4460], dia: 2 }
-  - { nombre: "Barranco de las Vacas", coordenadas: [27.9135, -15.4810], dia: 2 }
+  - { nombre: "Barranco de las Vacas", coordenadas: [27.912783, -15.474675], dia: 2 }
   - { nombre: "Dunas de Maspalomas", coordenadas: [27.7430, -15.5770], dia: 2 }
   - { nombre: "Santa Brígida", coordenadas: [28.0320, -15.5040], dia: 3 }
   - { nombre: "Mirador Astronómico de Pinos de Gáldar", coordenadas: [28.0450, -15.6250], dia: 3 }
@@ -106,7 +106,10 @@ Y después, el **Barranco de las Vacas**:
 - Al llegar a la altura de un puente, girad a la derecha y andad unos minutos.
 - Llegaréis a un sitio espectacular. Hay que ir para descubrirlo.
 
-> Para no perderos en el Barranco de las Vacas, nos guiamos por las indicaciones de blogueros de viajes y de Instagram. Aparcad sin estorbar: los bomberos de Gran Canaria se han quejado de los coches en los arcenes, porque retrasan las emergencias.
+> **Ubicación exacta:** 27.912783, -15.474675 ([abrir en Google Maps](https://www.google.com/maps/search/?api=1&query=27.912783,-15.474675)). En el navegador del móvil es mejor buscar «Tobas de Colores del Barranco de las Vacas»: si buscáis solo «Barranco de las Vacas», os puede llevar a otro sitio.
+{: .dato}
+
+> Aparcad sin estorbar: los bomberos de Gran Canaria se han quejado de los coches en los arcenes, porque retrasan las emergencias.
 {: .ojo}
 
 🌙 **Noche:** atardecer en las **Dunas de Maspalomas**. Aparcamos cerca del hotel Riu Palace Maspalomas, lo atravesamos y llegamos enseguida a las dunas. Vuelta a Las Palmas tras un día maravilloso y muy completo, ¡de los que no se olvidan!
@@ -243,6 +246,7 @@ Nos quedaron pendientes, y son obligados la próxima vez:
 - [Reserva previa en el Roque Nublo (RTVC)](https://rtvc.es/el-acceso-a-roque-nublo-exigira-reserva-previa-a-partir-de-febrero/)
 - [Horario y reservas para subir al Roque Nublo (eldiario.es)](https://www.eldiario.es/canariasahora/sociedad/horario-subir-roque-nublo-acceder-reservar-visita_1_13415122.html)
 - [Aparcamiento en el Barranco de las Vacas (RTVC)](https://rtvc.es/piden-senalizacion-y-aparcamientos-en-barranco-de-las-vacas/)
+- [Barranco de las Vacas: ubicación (Showcaves)](https://showcaves.com/english/es/gorges/Vacas.html)
 - [Museo Etnográfico Casas Cuevas de Artenara (Hello Canary Islands)](https://www.hellocanaryislands.com/museums-and-places-of-interest/gran-canaria/museo-etnografico-de-las-casas-cuevas-de-artenara/)
 - [Asadero La Caldera (Gastroranking)](https://gastroranking.es/r/asadero-la-caldera_73527/)
 - [Jardín Botánico Viera y Clavijo](https://www.grancanaria.com/turismo/en/nature/swimming-in-a-sea-of-strange-plants/)
