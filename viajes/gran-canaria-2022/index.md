@@ -184,7 +184,7 @@ Seguimos hacia **Teror**: paseo por sus calles, la **Basílica de Nuestra Señor
 
 🌅 **Mañana:** visita al **Jardín Botánico Viera y Clavijo**, antes de ir al aeropuerto. Abre temprano por la mañana y cierra a las 18:00, y la entrada es gratuita. Perfecto para un último paseo antes del vuelo.
 
-☀️ **Mediodía:** devolución del coche (en nuestro caso, a las 12:00 como muy tarde) y vuelo de vuelta.
+☀️ **Mediodía:** devolución del coche y vuelo de vuelta. Con ganas de seguir recorriendo este trocito de paraíso.
 
 ## Dónde comer
 
