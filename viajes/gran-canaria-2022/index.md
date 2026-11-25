@@ -39,7 +39,7 @@ lugares:
   - { nombre: "Jardín Botánico Viera y Clavijo", coordenadas: [28.0660, -15.4590], dia: 5 }
 galeria:
   - { archivo: imagenes/dunas-maspalomas-atardecer.jpg, texto: "Atardecer en las Dunas de Maspalomas" }
-  - { archivo: imagenes/mirador-cumbre-vistas.jpg, texto: "Vistas de las montañas de la cumbre desde un mirador" }
+  - { archivo: imagenes/mirador-tejeda-vistas.jpg, texto: "Vistas de las montañas desde un mirador en Tejeda" }
   - { archivo: imagenes/cesta-gigante-tejeda-bentayga.jpg, texto: "La Cesta gigante de Tejeda, con el Roque Bentayga al fondo" }
   - { archivo: imagenes/sendero-s70-roque-nublo.jpg, texto: "Pinar y montañas desde el sendero S-70 al Roque Nublo" }
   - { archivo: imagenes/roque-nublo-entre-rocas.jpg, texto: "El Roque Nublo asomando entre las rocas" }
@@ -134,6 +134,8 @@ De camino a Artenara, nos paramos en un mirador donde vimos muchos coches y moto
 
 ![Sentada dentro de la Cesta gigante de Tejeda, con el Roque Bentayga al fondo](imagenes/cesta-gigante-tejeda-bentayga.jpg)
 
+![Sentada en un muro de piedra en Tejeda, mirando las montañas y barrancos de la cumbre](imagenes/mirador-tejeda-vistas.jpg)
+
 🌙 **Atardecer:** el **Roque Nublo**, un lugar mágico que jamás podremos olvidar. La carretera tiene muchas curvas, pero se va disfrutando del paisaje.
 - Dejamos el coche en el aparcamiento de la **Degollada de la Goleta**. Desde 2025 ya no se puede: mirad el aviso de abajo.
 - El sendero, de piedras y rocas, tiene unos **1,5 km**. Lo subimos en media hora, parando a hacer fotos.
@@ -150,8 +152,6 @@ Nos quedamos allí una hora y media sentados, enamorados del silencio y de la pa
 > - **Otros accesos sin reserva:** por **La Culata** o por la **Degollada de la Hoya de la Vieja**. Son más largos.
 > - Llevad **linterna** para bajar y **abrigo**: al caer el sol hace frío.
 {: .ojo}
-
-![Vistas de las montañas y barrancos de la cumbre desde un mirador](imagenes/mirador-cumbre-vistas.jpg)
 
 ![Pinar y montañas a contraluz desde el sendero S-70, camino del Roque Nublo](imagenes/sendero-s70-roque-nublo.jpg)
 
