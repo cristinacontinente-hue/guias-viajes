@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guías de viaje</title>
+  <style>
+    :root { --fondo: #faf7f2; --texto: #2b2b2b; --suave: #6b6b6b; --acento: #d9653b; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fondo: #1c1b1a; --texto: #eeeae4; --suave: #a8a39b; --acento: #f08a5d; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: var(--fondo); color: var(--texto);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6;
+      padding: 16px;
+    }
+    main { max-width: 640px; text-align: center; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .5rem; }
+    h1 span { color: var(--acento); }
+    p { color: var(--suave); font-size: 1.1rem; margin: 0 0 1.5rem; }
+    .pronto {
+      display: inline-block; padding: .5rem 1rem; border: 1px solid var(--acento);
+      border-radius: 999px; color: var(--acento); font-size: .95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Guías de <span>viaje</span></h1>
+    <p>Itinerarios día a día, dónde comer, dónde dormir y consejos prácticos de cada destino.</p>
+    <span class="pronto">✈️ Muy pronto, las primeras guías</span>
+  </main>
+</body>
+</html>
