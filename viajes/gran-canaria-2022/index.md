@@ -70,10 +70,10 @@ Comimos de maravilla por muy poco dinero. Y vimos el atardecer más bonito de nu
 
 ## Cómo llegar y moverse
 
-- **Avión** hasta el aeropuerto de Gran Canaria.
-- **Coche de alquiler**: imprescindible para hacer estas rutas. Nosotros alquilamos con **Cicar**: se recoge y se deja en el mismo aeropuerto.
-- **Dónde dormir para moverse**: Las Palmas de Gran Canaria está a unos 20 minutos del aeropuerto en coche, y desde allí se llega bien a toda la isla.
-- **Carreteras**: las de la cumbre tienen muchas curvas. Merecen la pena, pero calculad más tiempo del que marca el mapa.
+- **Avión**: volamos desde Sevilla hasta el aeropuerto de Gran Canaria.
+- **Coche de alquiler**: imprescindible para recorrer la isla. Nosotros alquilamos con **Cicar**: se recoge y se deja en el mismo aeropuerto. Siempre que vamos a las Islas Canarias alquilamos coche con Cicar, la empresa líder en las islas.
+- **Dónde dormir para moverse**: elegimos Las Palmas de Gran Canaria. Está a unos 20 minutos del aeropuerto en coche, y desde allí se llega bien a toda la isla.
+- **Carreteras**: las de la cumbre tienen muchas curvas. Merecen la pena, pero calculad más tiempo del que marca el mapa. Id con calma y disfrutad del paisaje.
 
 > Organizad cada día por zonas (sureste, cumbre, norte). Así se aprovecha mucho más el tiempo y se conduce menos.
 {: .truco}
