@@ -12,6 +12,8 @@ etiquetas: [naturaleza, montaña, gastronomía, españa, islas, roadtrip]
 portada: imagenes/portada.jpg
 ideal_para: "Recorrer la isla en coche y ver atardeceres"
 resumen: "Casas cueva, pueblos con encanto, comida casera y el atardecer más bonito de nuestra vida en el Roque Nublo."
+region: canarias
+isla: "Gran Canaria"
 coordenadas: [27.9580, -15.5920]
 lo_mejor:
   - "Sin duda, el atardecer en el Roque Nublo, con el Teide al fondo y un mar de nubes"

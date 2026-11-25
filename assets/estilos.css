@@ -297,3 +297,59 @@ a.chip:hover { background: var(--acento); color: #fff; }
   .contenido h2 { break-after: avoid; }
   .dia, .caja, .gastos, figure { break-inside: avoid; }
 }
+
+/* ---------- Especiales por región (p. ej. Islas Canarias) ---------- */
+.banner-region {
+  display: flex; align-items: center; gap: 14px; max-width: 720px; margin: 0 auto 22px;
+  padding: 14px 18px; border-radius: var(--radio); text-decoration: none; color: #fff;
+  background: linear-gradient(120deg, #1f6f8b, #2b9aa8 55%, #e0a43b);
+  box-shadow: var(--sombra);
+}
+.banner-region:hover { filter: brightness(1.05); }
+.banner-icono { font-size: 2rem; line-height: 1; }
+.banner-texto { flex: 1; }
+.banner-texto strong { display: block; font-size: 1.1rem; }
+.banner-texto small { opacity: .9; }
+.banner-flecha { font-weight: 600; white-space: nowrap; }
+@media (max-width: 480px) { .banner-flecha { display: none; } }
+
+.region-hero {
+  text-align: center; color: #fff; padding: 48px 0 36px;
+  background: linear-gradient(160deg, #164e63, #1f6f8b 45%, #2b9aa8 75%, #e0a43b);
+}
+.region-hero h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .5rem; }
+.region-hero h1 span { color: #ffd38a; }
+.region-hero .intro { color: rgba(255,255,255,.9); }
+.region-icono { font-size: 2.6rem; margin: 0; }
+.progreso { max-width: 420px; margin: 22px auto 0; }
+.progreso p { margin: 8px 0 0; }
+.progreso-barra { height: 12px; border-radius: 999px; background: rgba(255,255,255,.25); overflow: hidden; }
+.progreso-barra span { display: block; height: 100%; border-radius: 999px; background: #ffd38a; }
+
+.seccion-titulo { text-align: center; margin: 36px 0 18px; }
+.tarjetas.islas { padding-bottom: 12px; }
+.tarjeta-isla {
+  position: absolute; bottom: 12px; left: 12px; font-weight: 700; font-size: 1.05rem;
+  background: rgba(0,0,0,.55); color: #fff; padding: 3px 12px; border-radius: 999px;
+}
+.islas-pendientes { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 12px; }
+.isla-pendiente {
+  padding: 10px 18px; border-radius: 999px; border: 2px dashed var(--borde);
+  color: var(--suave); font-weight: 600;
+}
+.pin-pendiente span { background: #9a96b8; font-size: 1.2rem; }
+.mapa-nota { text-align: center; color: var(--suave); font-size: .9rem; }
+.punto { display: inline-block; width: 12px; height: 12px; border-radius: 50%; vertical-align: middle; margin-right: 4px; }
+.punto-visitada { background: var(--acento); }
+.punto-pendiente { background: #9a96b8; }
+
+.consejos-lista { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 0 0 48px; }
+.consejos-lista li { display: flex; gap: 12px; background: var(--superficie); border-radius: 12px; padding: 14px 16px; box-shadow: var(--sombra); }
+.consejos-lista li > span { font-size: 1.5rem; line-height: 1.2; }
+
+.enlace-region { margin: 0 0 20px; }
+.enlace-region a {
+  display: inline-block; text-decoration: none; padding: 8px 14px; border-radius: 999px;
+  background: #e3f2f4; color: #1f6f8b; font-size: .95rem;
+}
+@media (prefers-color-scheme: dark) { .enlace-region a { background: #16353d; color: #8fd3de; } }

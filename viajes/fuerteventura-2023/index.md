@@ -12,6 +12,8 @@ portada: imagenes/portada.jpg
 ideal_para: "Bañarse en playas paradisíacas y recorrer la isla en coche"
 resumen: "Playas infinitas de arena blanca, aguas turquesas, volcanes, molinos y la Isla de Lobos: Fuerteventura en coche y sin prisas."
 etiquetas: [playa, naturaleza, gastronomía, españa, islas, roadtrip]
+region: canarias
+isla: "Fuerteventura"
 coordenadas: [28.3587, -14.0537]
 lo_mejor:
   - "Bañarnos en playas paradisíacas, extensas, de arena blanca y aguas turquesas"

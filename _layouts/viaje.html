@@ -32,6 +32,11 @@ layout: default
       {% if page.etiquetas %}<div class="ficha-etiquetas"><dt>🏷 Tipo de viaje</dt><dd>{% for e in page.etiquetas %}<a class="chip" href="{{ '/' | relative_url }}?tipo={{ e | downcase | uri_escape }}">{{ e }}</a>{% endfor %}</dd></div>{% endif %}
     </dl>
 
+    {%- if page.region and site.data.regiones[page.region] -%}
+    {%- assign reg = site.data.regiones[page.region] -%}
+    <p class="enlace-region"><a href="{{ reg.url | relative_url }}">{{ reg.icono }} Parte del especial <strong>{{ reg.nombre }}</strong>: ver todas las islas →</a></p>
+    {%- endif %}
+
     {% if page.lo_mejor or page.no_repetiriamos %}
     <div class="destacados">
       {% if page.lo_mejor %}

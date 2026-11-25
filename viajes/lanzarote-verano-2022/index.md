@@ -11,6 +11,8 @@ valoracion: 4
 ideal_para: "Volcanes, paisajes lunares y viajar en grupo"
 resumen: "La isla más desértica de Canarias: volcanes, la obra de César Manrique, calas para hacer esnórquel y una casa junto al mar para ocho amigas."
 etiquetas: [naturaleza, playa, españa, islas, roadtrip, amigas]
+region: canarias
+isla: "Lanzarote"
 coordenadas: [29.0469, -13.5900]
 lo_mejor:
   - "La casa junto al mar y los paseos entre las rocas al amanecer"

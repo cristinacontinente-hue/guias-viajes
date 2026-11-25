@@ -26,6 +26,17 @@ title: "Viajes Continente"
 
 <main class="contenedor">
   {% if viajes.size > 0 %}
+    {%- for r in site.data.regiones -%}
+    {%- assign reg = r[1] -%}
+    {%- assign guias_reg = site.pages | where: "layout", "viaje" | where: "region", r[0] -%}
+    {%- if guias_reg.size > 0 -%}
+    <a class="banner-region" href="{{ reg.url | relative_url }}">
+      <span class="banner-icono">{{ reg.icono }}</span>
+      <span class="banner-texto"><strong>Especial {{ reg.nombre }}</strong><small>{{ guias_reg.size }} de {{ reg.islas.size }} islas descubiertas</small></span>
+      <span class="banner-flecha">Ver especial →</span>
+    </a>
+    {%- endif -%}
+    {%- endfor %}
     <div class="buscador">
       <input type="search" id="buscar" placeholder="🔍 Buscar destino, comida, playa…" aria-label="Buscar en los viajes">
     </div>

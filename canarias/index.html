@@ -1,0 +1,96 @@
+---
+layout: default
+title: "Islas Canarias"
+region: canarias
+resumen: "Nuestras guías de las Islas Canarias: barrancos, volcanes, playas infinitas y atardeceres."
+---
+{%- assign reg = site.data.regiones[page.region] -%}
+{%- assign guias = site.pages | where: "layout", "viaje" | where: "region", page.region | sort: "fecha_viaje" -%}
+{%- assign total = reg.islas.size -%}
+{%- assign vistas = 0 -%}
+{%- for i in reg.islas -%}{%- assign g = guias | where: "isla", i.nombre | first -%}{%- if g -%}{%- assign vistas = vistas | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- assign pct = vistas | times: 100 | divided_by: total -%}
+
+<section class="region-hero">
+  <div class="contenedor">
+    <p class="region-icono">{{ reg.icono }}</p>
+    <h1>Especial <span>{{ reg.nombre }}</span></h1>
+    <p class="intro">Barrancos y cumbres, volcanes, playas infinitas de arena blanca y los mejores atardeceres. Así son las islas que hemos recorrido, siempre en coche y a nuestro ritmo.</p>
+    <div class="progreso" aria-label="{{ vistas }} de {{ total }} islas visitadas">
+      <div class="progreso-barra"><span style="width: {{ pct }}%"></span></div>
+      <p><strong>{{ vistas }} de {{ total }}</strong> islas descubiertas</p>
+    </div>
+  </div>
+</section>
+
+<main class="contenedor">
+  <h2 class="seccion-titulo">Las islas que hemos recorrido</h2>
+  <div class="tarjetas islas">
+    {%- for i in reg.islas -%}
+    {%- assign v = guias | where: "isla", i.nombre | first -%}
+    {%- if v -%}
+    <a class="tarjeta" href="{{ v.url | relative_url }}">
+      <div class="tarjeta-foto{% unless v.portada %} sin-foto{% endunless %}">
+        {% if v.portada %}<img src="{{ v.url | relative_url }}{{ v.portada }}" alt="{{ v.isla }}" loading="lazy">{% endif %}
+        <span class="tarjeta-fecha">{{ v.fechas }}</span>
+        <span class="tarjeta-isla">{{ i.nombre }}</span>
+      </div>
+      <div class="tarjeta-cuerpo">
+        <h2>{{ v.title }}</h2>
+        {% if v.resumen %}<p class="tarjeta-resumen">{{ v.resumen }}</p>{% endif %}
+        <p class="tarjeta-datos">
+          {% if v.duracion %}<span>⏱ {{ v.duracion }}</span>{% endif %}
+          {% if v.viajeros %}<span>👥 {{ v.viajeros }}</span>{% endif %}
+          {% if v.valoracion %}<span>{% include estrellas.html valor=v.valoracion %}</span>{% endif %}
+        </p>
+      </div>
+    </a>
+    {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+  <h2 class="seccion-titulo">🧳 Pendientes de descubrir</h2>
+  <div class="islas-pendientes">
+    {%- for i in reg.islas -%}
+    {%- assign v = guias | where: "isla", i.nombre | first -%}
+    {%- unless v -%}<span class="isla-pendiente">{{ i.nombre }}</span>{%- endunless -%}
+    {%- endfor -%}
+  </div>
+
+  <section class="mapa-viajes">
+    <h2 class="seccion-titulo">🗺 El mapa de nuestras islas</h2>
+    {% include leaflet.html %}
+    <div class="mapa" id="mapa-region" role="region" aria-label="Mapa de las Islas Canarias"></div>
+    <p class="mapa-nota"><span class="punto punto-visitada"></span> Con guía &nbsp; <span class="punto punto-pendiente"></span> Pendiente</p>
+  </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (!window.L) return;
+    var islas = [
+      {%- for i in reg.islas -%}{%- assign v = guias | where: "isla", i.nombre | first -%}
+      { n: {{ i.nombre | jsonify }}, c: [{{ i.coordenadas[0] }}, {{ i.coordenadas[1] }}], u: {% if v %}{{ v.url | relative_url | jsonify }}{% else %}null{% endif %} }{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ];
+    var mapa = L.map('mapa-region', { scrollWheelZoom: false }).setView([{{ reg.centro[0] }}, {{ reg.centro[1] }}], 7);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '© OpenStreetMap' }).addTo(mapa);
+    islas.forEach(function (i) {
+      var icono = L.divIcon({ className: 'pin' + (i.u ? '' : ' pin-pendiente'), html: '<span>' + (i.u ? '✈' : '·') + '</span>', iconSize: [28, 28], iconAnchor: [14, 14] });
+      L.marker(i.c, { icon: icono }).addTo(mapa).bindPopup(i.u ? '<a href="' + i.u + '"><strong>' + i.n + '</strong></a><br>Ver la guía' : '<strong>' + i.n + '</strong><br>Pendiente de descubrir');
+    });
+    mapa.fitBounds(islas.map(function (i) { return i.c; }), { padding: [30, 30] });
+  });
+  </script>
+
+  <section class="consejos-region">
+    <h2 class="seccion-titulo">Lo que hemos aprendido viajando por Canarias</h2>
+    <ul class="consejos-lista">
+      <li><span>🚗</span><div><strong>Coche siempre.</strong> En todas las islas lo alquilamos con Cicar: se recoge y se deja en el aeropuerto. Sin coche te pierdes lo mejor.</div></li>
+      <li><span>✈️</span><div><strong>Vuelos directos.</strong> Nosotros volamos siempre desde Sevilla, en poco más de dos horas.</div></li>
+      <li><span>🕐</span><div><strong>Una hora menos.</strong> En Canarias es una hora menos que en la península: tenedlo en cuenta con los vuelos y las reservas.</div></li>
+      <li><span>🌅</span><div><strong>Planificad los atardeceres.</strong> Terminar cada día en un buen sitio para ver la puesta de sol es lo que más recordamos de cada isla.</div></li>
+      <li><span>🗺️</span><div><strong>Organizad los días por zonas.</strong> Norte, sur, cumbre… así se conduce menos y se disfruta más.</div></li>
+      <li><span>🍽️</span><div><strong>Comed en los pueblos.</strong> Papas arrugadas con mojo, queso asado, carne de cabra… En los sitios de toda la vida se come de maravilla y barato. Muchos cierran lunes y martes.</div></li>
+      <li><span>⚠️</span><div><strong>Revisad antes de ir.</strong> Senderos, miradores y espacios protegidos cambian sus normas (reservas, lanzaderas, cierres por temporales). Mirad la web del Cabildo de cada isla.</div></li>
+    </ul>
+  </section>
+</main>

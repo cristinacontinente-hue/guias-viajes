@@ -111,6 +111,15 @@ el buscador y el mapa de la portada.
 
 Las coordenadas se sacan de OpenStreetMap o Google Maps (clic derecho en el sitio).
 
+## Especiales por región (Islas Canarias)
+
+- La página `canarias/` reúne todas las guías de Canarias: progreso "X de 8 islas", tarjetas,
+  islas pendientes, mapa y consejos comunes. La portada muestra un acceso destacado.
+- Para que una guía entre en el especial, añade a su cabecera:
+  `region: canarias` e `isla: "Tenerife"` (el nombre exacto de la isla, como en `_data/regiones.yml`).
+- Las islas y sus coordenadas están en `_data/regiones.yml`. Para crear otro especial
+  (por ejemplo, Baleares), añade allí la región y crea su página copiando `canarias/index.html`.
+
 ## Diseño de la web
 
 - La web se llama **Viajes Continente** ("Un placer para tu mente"). Colores del logo:
