@@ -43,6 +43,10 @@ galeria:
   - { archivo: imagenes/escultura-cesta-roque.jpg, texto: "Escultura con forma de cesta, con un roque al fondo" }
   - { archivo: imagenes/sendero-s70-roque-nublo.jpg, texto: "Pinar y montañas desde el sendero S-70 al Roque Nublo" }
   - { archivo: imagenes/roque-nublo-entre-rocas.jpg, texto: "El Roque Nublo asomando entre las rocas" }
+  - { archivo: imagenes/roque-nublo-vistas-teide-bentayga.jpg, texto: "Desde el Roque Nublo: el Bentayga, el mar de nubes y el Teide" }
+  - { archivo: imagenes/roque-nublo-atardecer.jpg, texto: "Atardecer en el Roque Nublo" }
+  - { archivo: imagenes/roque-nublo-ventanita.jpg, texto: "La ventanita del Roque Nublo, con el Teide al fondo" }
+  - { archivo: imagenes/roque-nublo-ventanita-brazos-abiertos.jpg, texto: "Con los brazos abiertos frente al atardecer" }
 ultima_revision: 2026-11-25
 ---
 
@@ -144,7 +148,15 @@ Nos quedamos allí una hora y media sentados, enamorados del silencio y de la pa
 
 ![El Roque Nublo asomando entre las rocas, con el cielo azul y el pinar debajo](imagenes/roque-nublo-entre-rocas.jpg)
 
-<!-- FOTO: Atardecer en el Roque Nublo con el Teide y el mar de nubes -->
+![Recostada en lo alto del Roque Nublo, con el Roque Bentayga, el mar de nubes y el Teide al fondo](imagenes/roque-nublo-vistas-teide-bentayga.jpg)
+
+![Atardecer dorado sobre las montañas de la cumbre desde el Roque Nublo](imagenes/roque-nublo-atardecer.jpg)
+
+La foto clave, desde la ventanita entre las rocas:
+
+![La ventanita entre las rocas del Roque Nublo, con el Teide, el mar de nubes y el cielo rosa al atardecer](imagenes/roque-nublo-ventanita.jpg)
+
+![Con los brazos abiertos frente al atardecer, visto desde la ventanita de roca del Roque Nublo](imagenes/roque-nublo-ventanita-brazos-abiertos.jpg)
 
 ### Día 4 (domingo): Pueblos del norte
 
