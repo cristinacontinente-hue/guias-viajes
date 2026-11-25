@@ -9,6 +9,7 @@ viajeros: "Pareja"
 presupuesto: "Bajo-medio"
 valoracion: 5
 etiquetas: [naturaleza, montaña, gastronomía, españa, islas, roadtrip]
+portada: imagenes/portada.jpg
 ideal_para: "Recorrer la isla en coche y ver atardeceres"
 resumen: "Casas cueva, pueblos con encanto, comida casera y el atardecer más bonito de nuestra vida en el Roque Nublo."
 coordenadas: [27.9580, -15.5920]
@@ -36,10 +37,14 @@ lugares:
   - { nombre: "Gáldar", coordenadas: [28.1450, -15.6500], dia: 4 }
   - { nombre: "Faro de Punta Sardina", coordenadas: [28.1650, -15.7080], dia: 4 }
   - { nombre: "Jardín Botánico Viera y Clavijo", coordenadas: [28.0660, -15.4590], dia: 5 }
+galeria:
+  - { archivo: imagenes/dunas-maspalomas-atardecer.jpg, texto: "Atardecer en las Dunas de Maspalomas" }
+  - { archivo: imagenes/mirador-cumbre-vistas.jpg, texto: "Vistas de las montañas de la cumbre desde un mirador" }
+  - { archivo: imagenes/escultura-cesta-roque.jpg, texto: "Escultura con forma de cesta, con un roque al fondo" }
+  - { archivo: imagenes/sendero-s70-roque-nublo.jpg, texto: "Pinar y montañas desde el sendero S-70 al Roque Nublo" }
+  - { archivo: imagenes/roque-nublo-entre-rocas.jpg, texto: "El Roque Nublo asomando entre las rocas" }
 ultima_revision: 2026-11-25
 ---
-
-<!-- FOTO: portada (pendiente de elegir entre las fotos del viaje) -->
 
 > **Antes de ir, revisad que todo sigue abierto.** Hicimos este viaje en octubre de 2022. Desde entonces pueden haber cambiado horarios, precios, accesos o normas, como ha pasado con el Roque Nublo. Algunos senderos, carreteras, miradores o restaurantes pueden estar cerrados por obras, desprendimientos o temporales. Consultad las webs oficiales del Cabildo de Gran Canaria y de cada ayuntamiento, y llamad a los restaurantes antes de ir.
 {: .ojo}
@@ -104,7 +109,7 @@ Y después, el **Barranco de las Vacas**:
 
 <!-- FOTO: Barranco de Guayadeque y casas cueva -->
 <!-- FOTO: Barranco de las Vacas -->
-<!-- FOTO: Atardecer en las Dunas de Maspalomas -->
+![Atardecer en las Dunas de Maspalomas, con el sol bajando sobre la arena y el faro al fondo](imagenes/dunas-maspalomas-atardecer.jpg)
 
 ### Día 3 (sábado): La cumbre, Artenara, Tejeda y el Roque Nublo
 
@@ -131,9 +136,15 @@ Nos quedamos allí una hora y media sentados, enamorados del silencio y de la pa
 > **Desde febrero de 2025 hace falta reserva previa para subir al Roque Nublo** en las horas de más visitas (de 9:00 a 17:00). Ya no se puede aparcar junto al inicio del sendero: se llega en un autobús lanzadera. Antes de ir, comprobad en la web del Cabildo de Gran Canaria los horarios, cómo se sube para ver el atardecer y cómo se reserva *(por confirmar)*{: .por-confirmar}.
 {: .ojo}
 
-<!-- FOTO: Vistas desde el Mirador del Corazón de Jesús (Artenara) -->
+![Vistas de las montañas y barrancos de la cumbre desde un mirador](imagenes/mirador-cumbre-vistas.jpg)
+
+![Sentada dentro de una gran escultura con forma de cesta, con un roque al fondo](imagenes/escultura-cesta-roque.jpg)
+
+![Pinar y montañas a contraluz desde el sendero S-70, camino del Roque Nublo](imagenes/sendero-s70-roque-nublo.jpg)
+
+![El Roque Nublo asomando entre las rocas, con el cielo azul y el pinar debajo](imagenes/roque-nublo-entre-rocas.jpg)
+
 <!-- FOTO: Atardecer en el Roque Nublo con el Teide y el mar de nubes -->
-<!-- FOTO: La "ventanita" entre las rocas del Roque Nublo -->
 
 ### Día 4 (domingo): Pueblos del norte
 
@@ -204,6 +215,10 @@ Nos quedaron pendientes, y son obligados la próxima vez:
 - [ ] **Agaete**
 - [ ] **Tirajana**
 
+
+## Galería
+
+{% include galeria.html %}
 
 ## Fuentes
 
