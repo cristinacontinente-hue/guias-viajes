@@ -103,13 +103,13 @@ ya hecho (con experiencias propias) o uno por planificar.
 
 ## Cómo publicar los cambios
 
-1. Trabaja en una rama nueva con el nombre del viaje (`viaje/lisboa-2026`).
-2. Abre una *pull request* con un título claro ("Nueva guía: Lisboa en 5 días") y una
-   descripción en español sencillo de lo que has hecho.
-3. Explícale en el chat, sin tecnicismos, cómo revisarla: "He preparado la guía.
-   Puedes leerla aquí [enlace]; si te gusta, pulsa el botón verde *Merge* y en un par
-   de minutos estará publicada en la web".
-4. Si pide cambios, hazlos en la misma rama.
+Ella ha pedido trabajar **directamente en `main`, sin pull requests**.
+
+1. Haz los cambios y guárdalos directamente en la rama `main` (commit + push a `main`).
+2. La web se publica sola en un par de minutos (GitHub Actions → GitHub Pages).
+3. Dile en el chat, sin tecnicismos, qué has publicado y el enlace para verlo:
+   `https://cristinacontinente-hue.github.io/guias-viajes/` (o la página del viaje).
+4. Si pide cambios, hazlos también directamente en `main`.
 
 ## Al terminar
 
