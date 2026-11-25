@@ -41,6 +41,9 @@ ultima_revision: 2026-11-25
 
 <!-- FOTO: portada (pendiente de elegir entre las fotos del viaje) -->
 
+> **Antes de ir, revisad que todo sigue abierto.** Hicimos este viaje en octubre de 2022. Desde entonces pueden haber cambiado horarios, precios, accesos o normas, como ha pasado con el Roque Nublo. Algunos senderos, carreteras, miradores o restaurantes pueden estar cerrados por obras, desprendimientos o temporales. Consultad las webs oficiales del Cabildo de Gran Canaria y de cada ayuntamiento, y llamad a los restaurantes antes de ir.
+{: .ojo}
+
 ## En pocas palabras
 
 Recorrimos Gran Canaria en coche durante cinco días, durmiendo siempre en Las Palmas.
@@ -175,6 +178,7 @@ Nosotros nos alojamos en **Aminta Home**, un *bed & breakfast* en una casa canar
 
 ## Consejos prácticos
 
+- **Comprobad antes de salir**: después de lluvias fuertes o temporales se suelen cerrar senderos, barrancos y carreteras de montaña. Mirad los avisos del Cabildo de Gran Canaria y de la AEMET el mismo día.
 - **Coche**: imprescindible. Las rutas por barrancos y cumbres no se pueden hacer bien en transporte público.
 - **Roque Nublo**: reserva previa y lanzadera desde 2025 (mirad el aviso del día 3).
 - **Atardeceres**: planificad cada día para terminar en un buen sitio para ver el atardecer: Maspalomas, Roque Nublo, Punta Sardina…
@@ -189,17 +193,18 @@ Nos quedaron pendientes, y son obligados la próxima vez:
 - [ ] Subir al **Pico de las Nieves**, a poder ser para ver el atardecer
 - [ ] Ruta por el paraje natural de **Los Tilos de Moya**
 - [ ] **Mogán** y **Puerto de Mogán**
-- [ ] **Mirador de Soria** y sus presas
+- [ ] **Mirador de la Sorrueda** y sus presas
 - [ ] **Mirador del Balcón**
 - [ ] **Risco Faneque**
 - [ ] **Agaete**
 - [ ] **Tirajana**
 
-<!-- Comprobar con ella: "Mirador Sorrueda" en sus notas; puede referirse a la presa de Sorrueda (Santa Lucía de Tirajana) o al mirador de Soria. -->
 
 ## Fuentes
 
 - [Turismo de Gran Canaria](https://www.grancanaria.com/turismo/)
+- [Cabildo de Gran Canaria](https://cabildo.grancanaria.com/)
+- [AEMET: avisos meteorológicos](https://www.aemet.es/es/eltiempo/prediccion/avisos)
 - [Reserva previa en el Roque Nublo (RTVC)](https://rtvc.es/el-acceso-a-roque-nublo-exigira-reserva-previa-a-partir-de-febrero/)
 - [Horario y reservas para subir al Roque Nublo (eldiario.es)](https://www.eldiario.es/canariasahora/sociedad/horario-subir-roque-nublo-acceder-reservar-visita_1_13415122.html)
 - [Aparcamiento en el Barranco de las Vacas (RTVC)](https://rtvc.es/piden-senalizacion-y-aparcamientos-en-barranco-de-las-vacas/)
