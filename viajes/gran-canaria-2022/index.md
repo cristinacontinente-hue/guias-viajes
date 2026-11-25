@@ -181,7 +181,7 @@ Seguimos hacia **Teror**: paseo por sus calles, la **Basílica de Nuestra Señor
 
 | Sitio | Qué pedir | Precio por persona |
 |---|---|---|
-| **Bar Restaurante Guayadeque** (Barranco de Guayadeque) | Cocina casera canaria. No hay mejor sitio para comer por la zona | Barato *(por confirmar)*{: .por-confirmar} |
+| **Bar Restaurante Guayadeque** (Barranco de Guayadeque) | Pan con alioli, **papas arrugadas con mojo rojo**, carne de cerdo frita, queso frito y ropa vieja | Barato, y sigue siéndolo |
 | **Asadero La Caldera** (Firgas, Calle Caldera 14) | Queso asado, papas arrugadas con mojo, croquetas de dátiles, garbanzada y bistec de cerdo | Unos 12 € (en 2022) |
 | **Tejeda** | Dulces de almendra y helados | — |
 
@@ -189,6 +189,9 @@ Seguimos hacia **Teror**: paseo por sus calles, la **Basílica de Nuestra Señor
 {: .dato}
 
 > El Asadero La Caldera no acepta reservas y los fines de semana se llena: id pronto o contad con esperar.
+{: .truco}
+
+> En el Bar Restaurante Guayadeque no os perdáis las papas arrugadas con mojo rojo. Es cocina casera canaria, exageradamente buena y barata: no hay mejor sitio para comer por la zona.
 {: .truco}
 
 Estos dos restaurantes, el Asadero La Caldera y el Bar Restaurante Guayadeque, se han convertido en nuestros sitios favoritos de la isla. Muy recomendables.
