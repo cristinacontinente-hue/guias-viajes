@@ -8,6 +8,7 @@ duracion: "6 días"
 viajeros: "Pareja"
 presupuesto: "Medio-bajo"
 valoracion: 5
+portada: imagenes/portada.jpg
 ideal_para: "Bañarse en playas paradisíacas y recorrer la isla en coche"
 resumen: "Playas infinitas de arena blanca, aguas turquesas, volcanes, molinos y la Isla de Lobos: Fuerteventura en coche y sin prisas."
 etiquetas: [playa, naturaleza, gastronomía, españa, islas, roadtrip]
@@ -42,10 +43,13 @@ lugares:
   - { nombre: "Playa del Viejo Rey", coordenadas: [28.2130, -14.2240], dia: 4 }
   - { nombre: "Dunas y Grandes Playas de Corralejo", coordenadas: [28.6900, -13.8350], dia: 5 }
   - { nombre: "Puertito de los Molinos", coordenadas: [28.5480, -14.0620], dia: 5 }
+galeria:
+  - { archivo: imagenes/popcorn-beach-palomitas.jpg, texto: "Las palomitas de Popcorn Beach" }
+  - { archivo: imagenes/isla-de-lobos-caldera.jpg, texto: "Subiendo a la caldera en la Isla de Lobos" }
+  - { archivo: imagenes/estatuas-guise-ayose.jpg, texto: "Las estatuas del Mirador de Guise y Ayose" }
+  - { archivo: imagenes/atardecer-playa-viejo-rey.jpg, texto: "Atardecer en la Playa del Viejo Rey" }
 ultima_revision: 2026-11-25
 ---
-
-<!-- FOTO: portada (pendiente de elegir entre las fotos del viaje) -->
 
 > **Antes de ir, revisad que todo sigue abierto.** Hicimos este viaje en octubre de 2023. Desde entonces pueden haber cambiado horarios, precios, accesos o normas. Algunos senderos, pistas, playas o restaurantes pueden estar cerrados por obras, desprendimientos o temporales. Consultad las webs oficiales del Cabildo de Fuerteventura y de cada ayuntamiento, y llamad a los restaurantes antes de ir.
 {: .ojo}
@@ -115,6 +119,8 @@ Por la noche, paseo por **Corralejo**, con mucho ambiente. Queríamos cenar en e
 <!-- FOTO: El Cotillo / Faro del Tostón -->
 <!-- FOTO: Atardecer en Popcorn Beach -->
 
+![Un puñado de palomitas blancas de Popcorn Beach en las manos](imagenes/popcorn-beach-palomitas.jpg)
+
 ### Día 3 (lunes): Isla de Lobos y el centro de la isla
 
 🌅 **Mañana:** a madrugar: desayuno pronto y al puerto de **Corralejo** para ir a la **Isla de Lobos**. Cogimos el ferry de las **9:45**, y en unos 20 minutos se llega. Nos costó **16 € por persona** (en 2023).
@@ -152,7 +158,11 @@ Después hicimos una ruta en coche por el centro de la isla:
 
 Cerca de allí están las **Cuevas de Ajuy**, con un sendero corto hasta las cuevas, y los **charcones de Ajuy**. A nosotros ya no nos dio tiempo porque llegamos tarde, pero merece la pena ([más información](https://www.fuerteventura.es/ajuy)).
 
-<!-- FOTO: Isla de Lobos / Puertito de Lobos -->
+![Los dos en el sendero de piedra que sube a la caldera de la Isla de Lobos](imagenes/isla-de-lobos-caldera.jpg)
+
+![Entre las dos estatuas gigantes de los reyes Guise y Ayose, en su mirador](imagenes/estatuas-guise-ayose.jpg)
+
+<!-- FOTO: Puertito de Lobos -->
 <!-- FOTO: Molino de El Durazno (Antigua) -->
 <!-- FOTO: Betancuria -->
 
@@ -170,7 +180,7 @@ Después, la **Playa de Sotavento**. Tiene su encanto, aunque está llena de gen
 {: .dato}
 
 <!-- FOTO: Playa de Mal Nombre -->
-<!-- FOTO: Atardecer en la Playa del Viejo Rey -->
+![Atardecer en la Playa del Viejo Rey, con los acantilados, las olas y dos surfistas en la orilla](imagenes/atardecer-playa-viejo-rey.jpg)
 
 ### Día 5 (miércoles): Dunas de Corralejo y Puertito de los Molinos
 
@@ -247,6 +257,10 @@ Nos quedaron pendientes:
 - [ ] **Cofete** y el **Roque del Moro**, con un día entero para disfrutarlos
 - [ ] Encontrar el **Arco de las Peñitas**, esta vez con luz de día
 - [ ] Las **Cuevas de Ajuy** y los **charcones de Ajuy**
+
+## Galería
+
+{% include galeria.html %}
 
 ## Fuentes
 
