@@ -49,7 +49,7 @@ galeria:
   - { archivo: imagenes/estatuas-guise-ayose.jpg, texto: "Las estatuas del Mirador de Guise y Ayose" }
   - { archivo: imagenes/hamburguesa-cabra-podomorfos-tindaya.jpg, texto: "Hamburguesa de cabra con vistas a Tindaya" }
   - { archivo: imagenes/letras-tindaya-montana.jpg, texto: "Las letras de Tindaya y su montaña" }
-  - { archivo: imagenes/playa-jandia-aguas-turquesas.jpg, texto: "Aguas turquesas en las playas de Jandía" }
+  - { archivo: imagenes/playa-mal-nombre.jpg, texto: "La Playa de Mal Nombre, nuestra favorita" }
   - { archivo: imagenes/atardecer-playa-viejo-rey.jpg, texto: "Atardecer en la Playa del Viejo Rey" }
   - { archivo: imagenes/dunas-corralejo.jpg, texto: "Las dunas de Corralejo" }
 ultima_revision: 2026-11-25
@@ -187,7 +187,7 @@ Después, la **Playa de Sotavento**. Tiene su encanto, aunque está llena de gen
 > **Cofete, visita obligada:** nosotros no llegamos a ir por falta de tiempo, pero es una zona increíble que queremos conocer. Si tenéis más días, os recomendamos dedicarle un día entero. Se tarda alrededor de una hora desde Morro Jable por una pista de tierra de unos 20 km. Es una playa para verla, no para bañarse, por las corrientes. Muy cerca está el **Roque del Moro**. También se puede ir en una guagua todoterreno desde Morro Jable: horarios y precio *(por confirmar)*{: .por-confirmar}. En Cofete no hay servicios: llevad agua y comida.
 {: .dato}
 
-![Playa de arena dorada y aguas turquesas en Jandía, con las montañas al fondo](imagenes/playa-jandia-aguas-turquesas.jpg)
+![La Playa de Mal Nombre: arena dorada, aguas turquesas y las montañas de Jandía al fondo](imagenes/playa-mal-nombre.jpg)
 ![Atardecer en la Playa del Viejo Rey, con los acantilados, las olas y dos surfistas en la orilla](imagenes/atardecer-playa-viejo-rey.jpg)
 
 ### Día 5 (miércoles): Dunas de Corralejo y Puertito de los Molinos
