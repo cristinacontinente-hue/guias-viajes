@@ -17,7 +17,6 @@ lo_mejor:
   - "La Playa de Mal Nombre, nuestra favorita: rincones, dunas y un lugar paradisíaco"
   - "La Isla de Lobos y su puertito de aguas súper cristalinas"
 no_repetiriamos:
-  - "Dejar Cofete fuera por no hacer tantos kilómetros: merece una tarde entera"
   - "Buscar el Arco de las Peñitas al atardecer: se nos echó la noche encima y no lo encontramos"
 lugares:
   - { nombre: "Caleta de Fuste (puerto y castillo)", coordenadas: [28.3958, -13.8568], dia: 1 }
@@ -167,7 +166,7 @@ Después, la **Playa de Sotavento**. Tiene su encanto, aunque está llena de gen
 
 🌙 **Atardecer:** en la **Playa del Viejo Rey**. Un atardecer idílico, con mucha gente haciendo surf.
 
-> **Cofete:** el día que vayáis a Morro Jable podéis ir a Cofete. Nosotros no fuimos por no hacer más kilómetros, pero merece dedicarle una tarde entera a toda esa zona increíble. Se tarda alrededor de una hora desde Morro Jable por una pista de tierra de unos 20 km. Es una playa para verla, no para bañarse, por las corrientes. Muy cerca está el **Roque del Moro**. También se puede ir en una guagua todoterreno desde Morro Jable: horarios y precio *(por confirmar)*{: .por-confirmar}. En Cofete no hay servicios: llevad agua y comida.
+> **Cofete, visita obligada:** nosotros no llegamos a ir por falta de tiempo, pero es una zona increíble que queremos conocer. Si tenéis más días, os recomendamos dedicarle un día entero. Se tarda alrededor de una hora desde Morro Jable por una pista de tierra de unos 20 km. Es una playa para verla, no para bañarse, por las corrientes. Muy cerca está el **Roque del Moro**. También se puede ir en una guagua todoterreno desde Morro Jable: horarios y precio *(por confirmar)*{: .por-confirmar}. En Cofete no hay servicios: llevad agua y comida.
 {: .dato}
 
 <!-- FOTO: Playa de Mal Nombre -->
@@ -245,7 +244,7 @@ En 2023 pagamos **284 € por las 5 noches, con desayuno incluido**, para los do
 
 Nos quedaron pendientes:
 
-- [ ] **Cofete** y el **Roque del Moro**, con una tarde entera para disfrutarlos
+- [ ] **Cofete** y el **Roque del Moro**, con un día entero para disfrutarlos
 - [ ] Encontrar el **Arco de las Peñitas**, esta vez con luz de día
 - [ ] Las **Cuevas de Ajuy** y los **charcones de Ajuy**
 
