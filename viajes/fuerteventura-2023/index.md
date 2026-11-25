@@ -47,7 +47,11 @@ galeria:
   - { archivo: imagenes/popcorn-beach-palomitas.jpg, texto: "Las palomitas de Popcorn Beach" }
   - { archivo: imagenes/isla-de-lobos-caldera.jpg, texto: "Subiendo a la caldera en la Isla de Lobos" }
   - { archivo: imagenes/estatuas-guise-ayose.jpg, texto: "Las estatuas del Mirador de Guise y Ayose" }
+  - { archivo: imagenes/hamburguesa-cabra-podomorfos-tindaya.jpg, texto: "Hamburguesa de cabra con vistas a Tindaya" }
+  - { archivo: imagenes/letras-tindaya-montana.jpg, texto: "Las letras de Tindaya y su montaña" }
+  - { archivo: imagenes/playa-jandia-aguas-turquesas.jpg, texto: "Aguas turquesas en las playas de Jandía" }
   - { archivo: imagenes/atardecer-playa-viejo-rey.jpg, texto: "Atardecer en la Playa del Viejo Rey" }
+  - { archivo: imagenes/dunas-corralejo.jpg, texto: "Las dunas de Corralejo" }
 ultima_revision: 2026-11-25
 ---
 
@@ -139,6 +143,10 @@ Nosotros la hicimos en menos de 3 horas, con la subida a la caldera incluida. No
 
 ☀️ **Tarde:** volvimos en el ferry de las 14:00 y pusimos rumbo a **Tindaya**. Comimos en **Los Podomorfos de Tindaya**: un sitio con mucho encanto, vistas preciosas a la montaña y una hamburguesa de cabra exquisita.
 
+![Hamburguesa de cabra con patatas en Los Podomorfos, con la Montaña de Tindaya al otro lado de la ventana](imagenes/hamburguesa-cabra-podomorfos-tindaya.jpg)
+
+![Sentada sobre las grandes letras de Tindaya, con la montaña al fondo](imagenes/letras-tindaya-montana.jpg)
+
 Después hicimos una ruta en coche por el centro de la isla:
 - **Molinos de Villaverde**
 - **Montaña de Tindaya**
@@ -179,7 +187,7 @@ Después, la **Playa de Sotavento**. Tiene su encanto, aunque está llena de gen
 > **Cofete, visita obligada:** nosotros no llegamos a ir por falta de tiempo, pero es una zona increíble que queremos conocer. Si tenéis más días, os recomendamos dedicarle un día entero. Se tarda alrededor de una hora desde Morro Jable por una pista de tierra de unos 20 km. Es una playa para verla, no para bañarse, por las corrientes. Muy cerca está el **Roque del Moro**. También se puede ir en una guagua todoterreno desde Morro Jable: horarios y precio *(por confirmar)*{: .por-confirmar}. En Cofete no hay servicios: llevad agua y comida.
 {: .dato}
 
-<!-- FOTO: Playa de Mal Nombre -->
+![Playa de arena dorada y aguas turquesas en Jandía, con las montañas al fondo](imagenes/playa-jandia-aguas-turquesas.jpg)
 ![Atardecer en la Playa del Viejo Rey, con los acantilados, las olas y dos surfistas en la orilla](imagenes/atardecer-playa-viejo-rey.jpg)
 
 ### Día 5 (miércoles): Dunas de Corralejo y Puertito de los Molinos
@@ -195,7 +203,7 @@ Y sobre todo, **perderse por las dunas**: es precioso.
 
 🌙 **Atardecer:** en el **Puertito de los Molinos**, un lugar agradable y con mucho encanto. Había poca gente. Subimos a unas rocas y vimos el atardecer desde ahí. También había gente haciendo surf, pero es una zona para surfistas con experiencia, no para principiantes.
 
-<!-- FOTO: Dunas de Corralejo -->
+![Paseando por las dunas de Corralejo, con los volcanes al fondo](imagenes/dunas-corralejo.jpg)
 <!-- FOTO: Atardecer en el Puertito de los Molinos -->
 
 ### Día 6 (jueves): Vuelta a casa
