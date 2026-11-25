@@ -218,7 +218,7 @@ Los que probamos y los que más os recomendamos:
 |---|---|---|
 | **Los Podomorfos de Tindaya** (Tindaya) | Hamburguesa de cabra | Mucho encanto y vistas a la Montaña de Tindaya |
 | **Restaurante El Horno** (Villaverde) | Cocina canaria | Aquí cenamos el domingo |
-| **Restaurante El Moral** (Villaverde) | Cocina canaria (sus reseñas destacan el carpaccio de cabra y los postres) | Cierra lunes y martes, y lo encontramos cerrado un domingo: llamad antes |
+| **Restaurante El Moral** (Villaverde) | Cocina canaria (sus reseñas destacan el carpaccio de cabra y los postres) | Cierra domingos y lunes |
 | **La Paneteca** (Lajares) | Desayuno o *brunch*: pan, bollería y café | Suele haber cola |
 | **Olivo Corso** y **El Roque de los Pescadores** (El Cotillo) | Cocina de fusión / pescado fresco con vistas al mar | Se llenan pronto |
 | **Casa de comidas Valtarajal** (Betancuria) | Comida casera canaria: carne de cabra, ropa vieja, quesos | Cerrado lunes y martes en 2023; días de apertura *(por confirmar)*{: .por-confirmar} |
